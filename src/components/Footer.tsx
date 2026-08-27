@@ -1,32 +1,32 @@
 import Link from "next/link";
 import Container from "./Container";
-import { CATEGORY_LABELS, CategoryKey } from "@/content/types";
-
-const categoryEntries = Object.entries(CATEGORY_LABELS) as [CategoryKey, string][];
+import { CATEGORY_LABELS, CATEGORY_ORDER } from "@/content/types";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-border-subtle bg-surface">
+    <footer className="mt-20 border-t border-border-subtle bg-surface pb-20 lg:pb-0">
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 text-lg font-bold tracking-tight">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-sm text-accent-foreground">
-              ✦
+          <div className="flex items-center gap-2 text-lg font-extrabold tracking-tight">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-base text-accent-foreground">
+              ✌️
             </span>
-            Be Positive News
+            <span>
+              <span className="text-foreground">be positive</span> <span className="text-primary">NEWS</span>
+            </span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-foreground/70">
-            Yoxlanılmış, ürəkaçan xəbərlər — elm, sağlamlıq, ətraf mühit, cəmiyyət və mədəniyyət sahələrindən.
+            Yoxlanılmış, ürəkaçan xəbərlər — Azərbaycan, dünya, biznes, texnologiya və süni intellekt sahələrindən.
           </p>
         </div>
 
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground/60">Bölmələr</h3>
           <ul className="mt-3 space-y-2">
-            {categoryEntries.map(([key, label]) => (
+            {CATEGORY_ORDER.map((key) => (
               <li key={key}>
-                <Link href={`/kateqoriya/${key}`} className="text-sm text-foreground/80 hover:text-accent">
-                  {label}
+                <Link href={`/kateqoriya/${key}`} className="text-sm text-foreground/80 hover:text-primary">
+                  {CATEGORY_LABELS[key]}
                 </Link>
               </li>
             ))}
@@ -37,12 +37,17 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground/60">Şirkət</h3>
           <ul className="mt-3 space-y-2">
             <li>
-              <Link href="/haqqimizda" className="text-sm text-foreground/80 hover:text-accent">
+              <Link href="/haqqimizda" className="text-sm text-foreground/80 hover:text-primary">
                 Haqqımızda
               </Link>
             </li>
             <li>
-              <Link href="/#abune" className="text-sm text-foreground/80 hover:text-accent">
+              <Link href="/axtar" className="text-sm text-foreground/80 hover:text-primary">
+                Axtarış
+              </Link>
+            </li>
+            <li>
+              <Link href="/#abune" className="text-sm text-foreground/80 hover:text-primary">
                 Bülletenə abunə ol
               </Link>
             </li>

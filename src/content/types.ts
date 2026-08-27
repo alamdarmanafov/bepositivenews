@@ -1,10 +1,11 @@
 export type CategoryKey =
-  | "environment"
-  | "health"
-  | "technology"
-  | "community"
-  | "science"
-  | "culture";
+  | "azerbaycan"
+  | "dunya"
+  | "biznes"
+  | "texnologiya"
+  | "ai"
+  | "sosial-media"
+  | "marketinq";
 
 export type Article = {
   slug: string;
@@ -20,10 +21,31 @@ export type Article = {
 };
 
 export const CATEGORY_LABELS: Record<CategoryKey, string> = {
-  environment: "Ətraf mühit",
-  health: "Sağlamlıq",
-  technology: "Texnologiya",
-  community: "Cəmiyyət",
-  science: "Elm",
-  culture: "Mədəniyyət",
+  azerbaycan: "Azərbaycan",
+  dunya: "Dünya",
+  biznes: "Biznes",
+  texnologiya: "Texnologiya",
+  ai: "AI",
+  "sosial-media": "Sosial Media",
+  marketinq: "Marketinq",
 };
+
+export const CATEGORY_ICONS: Record<CategoryKey, string> = {
+  azerbaycan: "🏙️",
+  dunya: "🌍",
+  biznes: "💼",
+  texnologiya: "💻",
+  ai: "✨",
+  "sosial-media": "#️⃣",
+  marketinq: "📣",
+};
+
+export const CATEGORY_ORDER: CategoryKey[] = [
+  "azerbaycan",
+  "dunya",
+  "biznes",
+  "texnologiya",
+  "ai",
+  "sosial-media",
+  "marketinq",
+];

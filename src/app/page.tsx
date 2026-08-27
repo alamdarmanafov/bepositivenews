@@ -1,59 +1,44 @@
+import Link from "next/link";
 import Container from "@/components/Container";
 import ArticleCard from "@/components/ArticleCard";
+import HeroSlider from "@/components/HeroSlider";
+import CategoryTabs from "@/components/CategoryTabs";
 import Newsletter from "@/components/Newsletter";
-import { getFeaturedArticle, getLatestArticles } from "@/content/articles";
-import { CATEGORY_LABELS, CategoryKey } from "@/content/types";
-import Link from "next/link";
-
-const categoryEntries = Object.entries(CATEGORY_LABELS) as [CategoryKey, string][];
+import { getLatestArticles } from "@/content/articles";
 
 export default function Home() {
-  const featured = getFeaturedArticle();
-  const latest = getLatestArticles(featured.slug).slice(0, 6);
+  const latest = getLatestArticles();
+  const heroSlides = latest.slice(0, 4);
+  const sideCards = latest.slice(4, 7);
+  const gridArticles = latest.slice(7, 13);
 
   return (
-    <Container className="flex flex-col gap-16 py-10 sm:py-14">
-      <section className="flex flex-col gap-6 text-center">
-        <span className="mx-auto inline-flex items-center gap-2 rounded-full bg-surface-muted px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent">
-          Bu günün xoş xəbəri
-        </span>
-        <h1 className="mx-auto max-w-2xl text-4xl font-black leading-tight tracking-tight sm:text-5xl">
-          Yaxşı şeylər baş verir. Biz onları axtarırıq.
-        </h1>
-        <p className="mx-auto max-w-xl text-base text-foreground/70 sm:text-lg">
-          Elm, sağlamlıq, ətraf mühit, cəmiyyət və mədəniyyət sahələrindən təsdiqlənmiş, ürəkaçan xəbərlər.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-foreground/50">Seçilmiş xəbər</h2>
-        <ArticleCard article={featured} size="large" />
-      </section>
-
-      <section>
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-foreground/50">Son xəbərlər</h2>
+    <Container className="flex flex-col gap-10 py-6 sm:py-10">
+      <section className="grid gap-4 lg:grid-cols-3 lg:items-stretch">
+        <div className="h-72 sm:h-96 lg:h-auto lg:col-span-2">
+          <HeroSlider slides={heroSlides} />
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {latest.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          {sideCards.map((article) => (
+            <ArticleCard key={article.slug} article={article} size="side" />
           ))}
         </div>
       </section>
 
+      <section id="kateqoriyalar" className="scroll-mt-20">
+        <CategoryTabs />
+      </section>
+
       <section>
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-foreground/50">
-          Bütün kateqoriyalara bax
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          {categoryEntries.map(([key, label]) => (
-            <Link
-              key={key}
-              href={`/kateqoriya/${key}`}
-              className="rounded-full border border-border-subtle bg-surface px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-            >
-              {label}
-            </Link>
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-extrabold tracking-tight">Son xəbərlər</h2>
+          <Link href="/xeberler" className="text-sm font-semibold text-primary hover:underline">
+            Hamısına bax →
+          </Link>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {gridArticles.map((article) => (
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
       </section>
