@@ -10,7 +10,6 @@ export function validateArticle(payload: Partial<Article>): string | null {
   if (!payload.category || !CATEGORY_ORDER.includes(payload.category)) return "Kateqoriya düzgün deyil.";
   if (!payload.publishedAt || !/^\d{4}-\d{2}-\d{2}$/.test(payload.publishedAt)) return "Tarix düzgün deyil.";
   if (!payload.readingMinutes || payload.readingMinutes < 1) return "Oxu müddəti düzgün deyil.";
-  if (!payload.gradient?.trim()) return "Fon rəngi seçin.";
-  if (!payload.emoji?.trim()) return "Emoji tələb olunur.";
+  if (!payload.image?.trim() && !payload.gradient?.trim()) return "Şəkil seçin.";
   return null;
 }

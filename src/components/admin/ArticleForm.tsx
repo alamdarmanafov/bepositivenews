@@ -1,9 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import Image from "next/image";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Article, CATEGORY_LABELS, CATEGORY_ORDER, CategoryKey } from "@/content/types";
-import { GRADIENT_PRESETS } from "@/lib/gradientPresets";
 import { slugify } from "@/lib/slug";
 
 type Props = { mode: "create" } | { mode: "edit"; initial: Article };
@@ -11,6 +11,17 @@ type Props = { mode: "create" } | { mode: "edit"; initial: Article };
 const inputClass =
   "w-full rounded-xl border border-border-subtle bg-surface px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary";
 const labelClass = "text-sm font-semibold";
+
+const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
+
+function readFileAsDataUrl(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(file);
+  });
+}
 
 export default function ArticleForm(props: Props) {
   const router = useRouter();
@@ -24,10 +35,14 @@ export default function ArticleForm(props: Props) {
   const [category, setCategory] = useState<CategoryKey>(initial?.category ?? CATEGORY_ORDER[0]);
   const [publishedAt, setPublishedAt] = useState(initial?.publishedAt ?? new Date().toISOString().slice(0, 10));
   const [readingMinutes, setReadingMinutes] = useState(initial?.readingMinutes ?? 3);
-  const [emoji, setEmoji] = useState(initial?.emoji ?? "📰");
-  const [gradient, setGradient] = useState(initial?.gradient ?? GRADIENT_PRESETS[0].value);
   const [featured, setFeatured] = useState(initial?.featured ?? false);
+
+  const [existingImage, setExistingImage] = useState(initial?.image);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
+
   const [submitting, setSubmitting] = useState(false);
+  const [uploadingImage, setUploadingImage] = useState(false);
   const [error, setError] = useState("");
 
   function handleTitleChange(value: string) {
@@ -35,10 +50,63 @@ export default function ArticleForm(props: Props) {
     if (!slugTouched) setSlug(slugify(value));
   }
 
+  async function handleImageSelect(event: ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+      setError("Yalnız JPG, PNG və ya WEBP şəkillərinə icazə var.");
+      return;
+    }
+    if (file.size > MAX_IMAGE_BYTES) {
+      setError("Şəkil 2MB-dan kiçik olmalıdır.");
+      return;
+    }
+
+    setError("");
+    setImageFile(file);
+    setImagePreview(await readFileAsDataUrl(file));
+  }
+
+  function removeImage() {
+    setImageFile(null);
+    setImagePreview(null);
+    setExistingImage(undefined);
+  }
+
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitting(true);
     setError("");
+
+    if (!imageFile && !existingImage) {
+      setError("Şəkil seçin.");
+      return;
+    }
+
+    setSubmitting(true);
+    let image = existingImage;
+
+    if (imageFile) {
+      setUploadingImage(true);
+      const dataUrl = await readFileAsDataUrl(imageFile);
+      const contentBase64 = dataUrl.split(",")[1];
+
+      const uploadRes = await fetch("/api/admin/upload", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug, mimeType: imageFile.type, contentBase64 }),
+      });
+      setUploadingImage(false);
+
+      if (!uploadRes.ok) {
+        const data = await uploadRes.json().catch(() => ({}));
+        setError(data.error ?? "Şəkil yüklənmədi.");
+        setSubmitting(false);
+        return;
+      }
+      const uploadData = (await uploadRes.json()) as { path: string };
+      image = uploadData.path;
+    }
 
     const payload: Article = {
       slug,
@@ -51,8 +119,9 @@ export default function ArticleForm(props: Props) {
       category,
       publishedAt,
       readingMinutes: Number(readingMinutes),
-      emoji: emoji.trim(),
-      gradient,
+      image,
+      gradient: initial?.gradient,
+      emoji: initial?.emoji,
       featured,
     };
 
@@ -93,6 +162,8 @@ export default function ArticleForm(props: Props) {
       setError(data.error ?? "Xəta baş verdi.");
     }
   }
+
+  const displayedImage = imagePreview ?? existingImage;
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
@@ -156,6 +227,37 @@ export default function ArticleForm(props: Props) {
         />
       </div>
 
+      <div className="flex flex-col gap-1.5">
+        <label className={labelClass}>Şəkil</label>
+        {displayedImage ? (
+          <div className="relative h-40 w-full overflow-hidden rounded-xl border border-border-subtle">
+            <Image src={displayedImage} alt="" fill unoptimized className="object-cover" />
+            <button
+              type="button"
+              onClick={removeImage}
+              className="absolute right-2 top-2 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold text-white hover:bg-black/80"
+            >
+              Sil
+            </button>
+          </div>
+        ) : (
+          <label
+            htmlFor="image"
+            className="flex h-40 w-full cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-border-subtle text-sm text-foreground/50 hover:border-primary hover:text-primary"
+          >
+            <span>Şəkil seçmək üçün klikləyin</span>
+            <span className="text-xs">JPG, PNG və ya WEBP · maks. 2MB</span>
+          </label>
+        )}
+        <input
+          id="image"
+          type="file"
+          accept="image/jpeg,image/png,image/webp"
+          onChange={handleImageSelect}
+          className="hidden"
+        />
+      </div>
+
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="category" className={labelClass}>
@@ -204,38 +306,6 @@ export default function ArticleForm(props: Props) {
             className={inputClass}
           />
         </div>
-
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="emoji" className={labelClass}>
-            Emoji
-          </label>
-          <input
-            id="emoji"
-            required
-            value={emoji}
-            onChange={(event) => setEmoji(event.target.value)}
-            className={inputClass}
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="gradient" className={labelClass}>
-          Fon rəngi
-        </label>
-        <select
-          id="gradient"
-          value={gradient}
-          onChange={(event) => setGradient(event.target.value)}
-          className={inputClass}
-        >
-          {GRADIENT_PRESETS.map((preset) => (
-            <option key={preset.value} value={preset.value}>
-              {preset.label}
-            </option>
-          ))}
-        </select>
-        <div className={`mt-1 h-10 w-full rounded-lg bg-gradient-to-br ${gradient}`} />
       </div>
 
       <label className="flex items-center gap-2 text-sm font-semibold">
@@ -256,7 +326,13 @@ export default function ArticleForm(props: Props) {
           disabled={submitting}
           className="rounded-full bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
         >
-          {submitting ? "Yadda saxlanılır…" : props.mode === "create" ? "Dərc et" : "Yadda saxla"}
+          {uploadingImage
+            ? "Şəkil yüklənir…"
+            : submitting
+              ? "Yadda saxlanılır…"
+              : props.mode === "create"
+                ? "Dərc et"
+                : "Yadda saxla"}
         </button>
         {props.mode === "edit" && (
           <button

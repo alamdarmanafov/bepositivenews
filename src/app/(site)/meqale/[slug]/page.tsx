@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/meqale/${article.slug}`,
       publishedTime: article.publishedAt,
       section: CATEGORY_LABELS[article.category],
+      images: article.image ? [{ url: article.image }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
@@ -59,7 +61,7 @@ export default async function ArticlePage({ params }: Props) {
     dateModified: article.publishedAt,
     articleSection: CATEGORY_LABELS[article.category],
     url: `${SITE_URL}/meqale/${article.slug}`,
-    image: [`${SITE_URL}/meqale/${article.slug}/opengraph-image`],
+    image: [article.image ? `${SITE_URL}${article.image}` : `${SITE_URL}/meqale/${article.slug}/opengraph-image`],
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -85,13 +87,19 @@ export default async function ArticlePage({ params }: Props) {
           <span>{article.readingMinutes} dəqiqəlik oxu</span>
         </div>
 
-        <div
-          className={`flex h-56 items-center justify-center rounded-2xl bg-gradient-to-br sm:h-80 ${article.gradient}`}
-        >
-          <span className="text-7xl" aria-hidden>
-            {article.emoji}
-          </span>
-        </div>
+        {article.image ? (
+          <div className="relative h-56 overflow-hidden rounded-2xl sm:h-80">
+            <Image src={article.image} alt="" fill sizes="(max-width: 768px) 100vw, 768px" className="object-cover" priority />
+          </div>
+        ) : (
+          <div
+            className={`flex h-56 items-center justify-center rounded-2xl bg-gradient-to-br sm:h-80 ${article.gradient}`}
+          >
+            <span className="text-7xl" aria-hidden>
+              {article.emoji}
+            </span>
+          </div>
+        )}
 
         <div className="flex flex-col gap-5 text-lg leading-relaxed text-foreground/90">
           {article.body.map((paragraph, index) => (

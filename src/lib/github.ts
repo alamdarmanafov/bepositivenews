@@ -1,6 +1,6 @@
 import type { Article } from "@/content/types";
 
-const FILE_PATH = "src/content/articles.json";
+const ARTICLES_PATH = "src/content/articles.json";
 
 function repoSlug(): { owner: string; repo: string } {
   const value = process.env.GITHUB_REPO ?? "";
@@ -15,9 +15,9 @@ function branch(): string {
   return process.env.GITHUB_CONTENT_BRANCH || "main";
 }
 
-function apiUrl(): string {
+function apiUrl(path: string): string {
   const { owner, repo } = repoSlug();
-  return `https://api.github.com/repos/${owner}/${repo}/contents/${FILE_PATH}`;
+  return `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 }
 
 function authHeaders(): Record<string, string> {
@@ -33,7 +33,7 @@ function authHeaders(): Record<string, string> {
 }
 
 export async function readArticlesFile(): Promise<{ articles: Article[]; sha: string }> {
-  const res = await fetch(`${apiUrl()}?ref=${branch()}`, {
+  const res = await fetch(`${apiUrl(ARTICLES_PATH)}?ref=${branch()}`, {
     headers: authHeaders(),
     cache: "no-store",
   });
@@ -47,7 +47,7 @@ export async function readArticlesFile(): Promise<{ articles: Article[]; sha: st
 
 export async function writeArticlesFile(articles: Article[], sha: string, message: string): Promise<void> {
   const content = Buffer.from(JSON.stringify(articles, null, 2) + "\n", "utf-8").toString("base64");
-  const res = await fetch(apiUrl(), {
+  const res = await fetch(apiUrl(ARTICLES_PATH), {
     method: "PUT",
     headers: { ...authHeaders(), "Content-Type": "application/json" },
     body: JSON.stringify({ message, content, sha, branch: branch() }),
@@ -55,5 +55,18 @@ export async function writeArticlesFile(articles: Article[], sha: string, messag
   if (!res.ok) {
     const body = await res.text().catch(() => "");
     throw new Error(`GitHub-a yazıla bilmədi (${res.status}). ${body}`.trim());
+  }
+}
+
+/** Uploads a new binary file (e.g. an image) at repoPath. repoPath must not already exist. */
+export async function uploadBinaryFile(repoPath: string, base64Content: string, message: string): Promise<void> {
+  const res = await fetch(apiUrl(repoPath), {
+    method: "PUT",
+    headers: { ...authHeaders(), "Content-Type": "application/json" },
+    body: JSON.stringify({ message, content: base64Content, branch: branch() }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`Şəkil GitHub-a yüklənmədi (${res.status}). ${body}`.trim());
   }
 }

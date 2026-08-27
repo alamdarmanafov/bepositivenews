@@ -36,9 +36,11 @@ npm run lint
 ## Admin panel (`/admin`)
 
 Sayt tam statikdır — verilənlər bazası yoxdur. Admin panel xəbərləri
-`src/content/articles.json` faylına GitHub Contents API vasitəsilə
-birbaşa commit edir; Vercel həmin push-u görüb saytı avtomatik yenidən
-deploy edir (adətən 30-60 saniyə).
+`src/content/articles.json` faylına, şəkilləri isə `public/uploads/`
+qovluğuna GitHub Contents API vasitəsilə birbaşa commit edir; Vercel
+həmin push-u görüb saytı avtomatik yenidən deploy edir (adətən 30-60
+saniyə). Hər yeni xəbər üçün şəkil məcburidir (JPG/PNG/WEBP, maks.
+2MB); köhnə xəbərlər (şəkilsiz) hələ də fon rəngi + emoji ilə göstərilir.
 
 Aktiv etmək üçün Vercel-də (Project Settings → Environment Variables)
 bu dəyişənləri təyin edin (nümunə: `.env.example`):

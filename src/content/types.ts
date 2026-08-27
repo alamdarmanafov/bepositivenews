@@ -16,8 +16,11 @@ export type Article = {
   publishedAt: string;
   readingMinutes: number;
   featured?: boolean;
-  gradient: string;
-  emoji: string;
+  /** Cover photo path (e.g. "/uploads/slug-169.jpg"). Required for new articles. */
+  image?: string;
+  /** Legacy fallback visuals, used only when image is absent. */
+  gradient?: string;
+  emoji?: string;
 };
 
 export const CATEGORY_LABELS: Record<CategoryKey, string> = {

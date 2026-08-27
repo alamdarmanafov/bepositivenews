@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Article } from "@/content/types";
 import { formatDateAz } from "@/lib/format";
@@ -13,19 +14,30 @@ export default function ArticleCard({
   const isLarge = size === "large";
   const isSide = size === "side";
   const href = `/meqale/${article.slug}`;
+  const imageHeight = isLarge ? "h-56 sm:h-72" : isSide ? "h-24" : "h-40";
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border-subtle bg-surface shadow-sm transition-shadow hover:shadow-md">
       <Link href={href} className="relative block">
-        <div
-          className={`flex items-center justify-center bg-gradient-to-br ${article.gradient} ${
-            isLarge ? "h-56 sm:h-72" : isSide ? "h-24" : "h-40"
-          }`}
-        >
-          <span className={isLarge ? "text-6xl" : isSide ? "text-2xl" : "text-4xl"} aria-hidden>
-            {article.emoji}
-          </span>
-        </div>
+        {article.image ? (
+          <div className={`relative ${imageHeight}`}>
+            <Image
+              src={article.image}
+              alt=""
+              fill
+              sizes={isLarge ? "(max-width: 768px) 100vw, 800px" : "(max-width: 768px) 100vw, 400px"}
+              className="object-cover"
+            />
+          </div>
+        ) : (
+          <div
+            className={`flex items-center justify-center bg-gradient-to-br ${article.gradient} ${imageHeight}`}
+          >
+            <span className={isLarge ? "text-6xl" : isSide ? "text-2xl" : "text-4xl"} aria-hidden>
+              {article.emoji}
+            </span>
+          </div>
+        )}
         <CategoryBadge category={article.category} asLink={false} className="absolute left-3 top-3" />
       </Link>
 

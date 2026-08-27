@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Article } from "@/content/types";
@@ -30,14 +31,26 @@ export default function HeroSlider({ slides }: { slides: Article[] }) {
       {slides.map((slide, i) => (
         <div
           key={slide.slug}
-          className={`absolute inset-0 flex flex-col justify-end bg-gradient-to-br p-6 transition-opacity duration-700 sm:p-8 ${
-            slide.gradient
+          className={`absolute inset-0 flex flex-col justify-end overflow-hidden p-6 transition-opacity duration-700 sm:p-8 ${
+            slide.image ? "" : `bg-gradient-to-br ${slide.gradient}`
           } ${i === index ? "opacity-100" : "pointer-events-none opacity-0"}`}
         >
+          {slide.image && (
+            <Image
+              src={slide.image}
+              alt=""
+              fill
+              sizes="(max-width: 1024px) 100vw, 900px"
+              priority={i === 0}
+              className="object-cover"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-          <span className="absolute right-6 top-6 text-7xl opacity-30 sm:text-8xl" aria-hidden>
-            {slide.emoji}
-          </span>
+          {!slide.image && (
+            <span className="absolute right-6 top-6 text-7xl opacity-30 sm:text-8xl" aria-hidden>
+              {slide.emoji}
+            </span>
+          )}
 
           <div className="relative z-10 flex flex-col gap-3">
             <div className="flex items-center gap-2">
