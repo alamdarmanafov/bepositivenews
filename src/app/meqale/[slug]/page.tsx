@@ -7,6 +7,7 @@ import CategoryBadge from "@/components/CategoryBadge";
 import { articles, getArticleBySlug, getArticlesByCategory } from "@/content/articles";
 import { CATEGORY_LABELS } from "@/content/types";
 import { formatDateAz } from "@/lib/format";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,6 +22,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: `/meqale/${article.slug}`,
+    },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      url: `/meqale/${article.slug}`,
+      publishedTime: article.publishedAt,
+      section: CATEGORY_LABELS[article.category],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+    },
   };
 }
 
@@ -33,8 +50,26 @@ export default async function ArticlePage({ params }: Props) {
     .filter((a) => a.slug !== article.slug)
     .slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.excerpt,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    articleSection: CATEGORY_LABELS[article.category],
+    url: `${SITE_URL}/meqale/${article.slug}`,
+    image: [`${SITE_URL}/meqale/${article.slug}/opengraph-image`],
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon` },
+    },
+  };
+
   return (
     <Container className="flex flex-col gap-10 py-10 sm:py-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div>
         <Link href="/" className="text-sm font-medium text-foreground/60 hover:text-accent">
           ← Ana səhifəyə qayıt

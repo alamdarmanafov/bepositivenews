@@ -18,7 +18,20 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params;
   if (!isCategoryKey(category)) return {};
-  return { title: CATEGORY_LABELS[category] };
+  const label = CATEGORY_LABELS[category];
+  const description = `${label} bölməsindəki yoxlanılmış, ürəkaçan xəbərlər.`;
+  return {
+    title: label,
+    description,
+    alternates: {
+      canonical: `/kateqoriya/${category}`,
+    },
+    openGraph: {
+      title: label,
+      description,
+      url: `/kateqoriya/${category}`,
+    },
+  };
 }
 
 export default async function CategoryPage({ params }: Props) {

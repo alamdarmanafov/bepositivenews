@@ -1,10 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Container from "@/components/Container";
 import ArticleCard from "@/components/ArticleCard";
 import HeroSlider from "@/components/HeroSlider";
 import CategoryTabs from "@/components/CategoryTabs";
 import Newsletter from "@/components/Newsletter";
 import { getLatestArticles } from "@/content/articles";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   const latest = getLatestArticles();
@@ -14,6 +21,8 @@ export default function Home() {
 
   return (
     <Container className="flex flex-col gap-10 py-6 sm:py-10">
+      <h1 className="sr-only">Be Positive News — Azərbaycan və dünyadan yoxlanılmış yaxşı xəbərlər</h1>
+
       <section className="grid gap-4 lg:grid-cols-3 lg:items-stretch">
         <div className="h-72 sm:h-96 lg:h-auto lg:col-span-2">
           <HeroSlider slides={heroSlides} />

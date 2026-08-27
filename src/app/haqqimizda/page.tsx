@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
 import Container from "@/components/Container";
 
+const description = "Be Positive News — müstəqil, yoxlanılmış yaxşı xəbərlər nəşri.";
+
 export const metadata: Metadata = {
   title: "Haqqımızda",
-  description: "Be Positive News — müstəqil, yoxlanılmış yaxşı xəbərlər nəşri.",
+  description,
+  alternates: {
+    canonical: "/haqqimizda",
+  },
+  openGraph: {
+    title: "Haqqımızda · Be Positive News",
+    description,
+    url: "/haqqimizda",
+  },
 };
 
 export default function AboutPage() {

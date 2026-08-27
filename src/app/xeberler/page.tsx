@@ -3,9 +3,19 @@ import Container from "@/components/Container";
 import ArticleCard from "@/components/ArticleCard";
 import { getLatestArticles } from "@/content/articles";
 
+const description = "Be Positive News-də dərc olunan bütün xəbərlərin siyahısı.";
+
 export const metadata: Metadata = {
   title: "Bütün xəbərlər",
-  description: "Be Positive News-də dərc olunan bütün xəbərlərin siyahısı.",
+  description,
+  alternates: {
+    canonical: "/xeberler",
+  },
+  openGraph: {
+    title: "Bütün xəbərlər · Be Positive News",
+    description,
+    url: "/xeberler",
+  },
 };
 
 export default function AllArticlesPage() {
