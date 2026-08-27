@@ -48,7 +48,9 @@ bu dəyişənləri təyin edin (nümunə: `.env.example`):
   fine-grained Personal Access Token
   ([yaratmaq üçün](https://github.com/settings/personal-access-tokens/new))
 - `GITHUB_REPO` — `sahib/repo` formatında (məs. `alamdarmanafov/bepositivenews`)
-- `GITHUB_CONTENT_BRANCH` — commit ediləcək branch (adətən `main`)
+- `GITHUB_CONTENT_BRANCH` — commit ediləcək branch, Vercel-in deploy
+  etdiyi branch ilə eyni olmalıdır (hazırda `claude/yeni-sayt-quraq-8ya9y2`,
+  bu repoda hələ `main` yoxdur)
 - `NEXT_PUBLIC_SITE_URL` — saytın əsl domeni (canonical/OG/sitemap üçün)
 
 Dəyişənlər olmadan `/admin` girişə icazə vermir və xəbər siyahısı
