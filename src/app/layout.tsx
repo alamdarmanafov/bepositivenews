@@ -1,10 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import TopBar from "@/components/TopBar";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import MobileBottomNav from "@/components/MobileBottomNav";
-import { getFeaturedArticle } from "@/content/articles";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -51,31 +46,29 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/icon`,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: SITE_NAME,
+      description: SITE_DESCRIPTION,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      inLanguage: "az",
+    },
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  const trend = getFeaturedArticle().title;
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": `${SITE_URL}/#organization`,
-        name: SITE_NAME,
-        url: SITE_URL,
-        logo: `${SITE_URL}/icon`,
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
-        name: SITE_NAME,
-        description: SITE_DESCRIPTION,
-        publisher: { "@id": `${SITE_URL}/#organization` },
-        inLanguage: "az",
-      },
-    ],
-  };
-
   return (
     <html
       lang="az"
@@ -86,11 +79,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <TopBar trend={trend} />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <MobileBottomNav />
+        {children}
       </body>
     </html>
   );
