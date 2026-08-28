@@ -1,7 +1,6 @@
 [
   {
     "slug": "ai-model-tibbi-diaqnostika-nailiyyeti",
-    "category": "ai",
     "title": "Yeni nəsil süni intellekt modeli xəstəlik diaqnostikasında həkim səviyyəsinə çatdı",
     "excerpt": "Açıq mənbəli model nadir xəstəliklərin erkən aşkarlanmasında yüksək dəqiqlik göstərib və tədqiqatçılara pulsuz açılıb.",
     "body": [
@@ -9,11 +8,13 @@
       "Layihənin ən mühüm cəhəti odur ki, model açıq mənbə kimi buraxılıb — bu, resursu az olan xəstəxanaların da eyni alətdən istifadə etməsinə imkan verir. İlk tətbiq bir neçə regional klinikada sınaqdan keçirilib.",
       "Tədqiqatçılar vurğulayır ki, model həkimi əvəz etmir, əksinə ilkin qiymətləndirmə mərhələsini sürətləndirərək mütəxəssislərin vaxtına qənaət edir."
     ],
+    "category": "ai",
     "publishedAt": "2026-08-20",
     "readingMinutes": 3,
-    "featured": true,
+    "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
-    "emoji": "🤖"
+    "emoji": "🤖",
+    "featured": true
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -28,11 +29,11 @@
     "publishedAt": "2026-07-30",
     "readingMinutes": 2,
     "gradient": "from-sky-500 via-blue-500 to-indigo-600",
-    "emoji": "⚡"
+    "emoji": "⚡",
+    "featured": false
   },
   {
     "slug": "bakida-sahil-bulvari-layihesi",
-    "category": "azerbaycan",
     "title": "Bakıda yeni sahil bulvarı layihəsinə start verildi",
     "excerpt": "Şəhərin qərb hissəsində açılacaq yeni bulvar piyada zolaqları, velosiped yolları və ictimai istirahət sahələri ilə tamamlanacaq.",
     "body": [
@@ -40,10 +41,13 @@
       "Bələdiyyə nümayəndələri bildirir ki, layihə həm ictimai nəqliyyatla əlaqəni yaxşılaşdıracaq, həm də sahil boyu yeni kiçik biznes sahələri üçün imkan yaradacaq.",
       "Sakinlərin təklifləri əsasında hazırlanan layihə artıq açıq müzakirə mərhələsindədir."
     ],
+    "category": "azerbaycan",
     "publishedAt": "2026-08-16",
     "readingMinutes": 2,
+    "image": "/uploads/bakida-sahil-bulvari-layihesi-1787898827654.jpg",
     "gradient": "from-cyan-500 via-sky-500 to-blue-600",
-    "emoji": "🌅"
+    "emoji": "🌅",
+    "featured": false
   },
   {
     "slug": "vilayetde-gunes-enerjili-mekteb-yemekxanalari",
@@ -58,7 +62,8 @@
     "publishedAt": "2026-08-11",
     "readingMinutes": 3,
     "gradient": "from-amber-400 via-yellow-300 to-orange-300",
-    "emoji": "☀️"
+    "emoji": "☀️",
+    "featured": false
   },
   {
     "slug": "peyvend-nisbetleri-dunyada-yukselir",
@@ -73,7 +78,8 @@
     "publishedAt": "2026-08-05",
     "readingMinutes": 3,
     "gradient": "from-rose-400 via-orange-300 to-amber-200",
-    "emoji": "💉"
+    "emoji": "💉",
+    "featured": false
   },
   {
     "slug": "resif-reklord-suretle-berpa-olunur",
@@ -88,7 +94,8 @@
     "publishedAt": "2026-07-27",
     "readingMinutes": 2,
     "gradient": "from-cyan-400 via-teal-300 to-emerald-300",
-    "emoji": "🪸"
+    "emoji": "🪸",
+    "featured": false
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -103,7 +110,8 @@
     "publishedAt": "2026-08-08",
     "readingMinutes": 3,
     "gradient": "from-emerald-500 via-green-500 to-teal-600",
-    "emoji": "💼"
+    "emoji": "💼",
+    "featured": false
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
@@ -118,7 +126,8 @@
     "publishedAt": "2026-07-18",
     "readingMinutes": 3,
     "gradient": "from-slate-500 via-sky-500 to-blue-600",
-    "emoji": "🔋"
+    "emoji": "🔋",
+    "featured": false
   },
   {
     "slug": "dronla-mese-eken-layihe",
@@ -133,7 +142,8 @@
     "publishedAt": "2026-07-10",
     "readingMinutes": 3,
     "gradient": "from-emerald-400 via-teal-400 to-cyan-500",
-    "emoji": "🌱"
+    "emoji": "🌱",
+    "featured": false
   },
   {
     "slug": "insulin-yamasi-kesfi",
@@ -148,7 +158,8 @@
     "publishedAt": "2026-06-28",
     "readingMinutes": 3,
     "gradient": "from-violet-500 via-purple-500 to-indigo-600",
-    "emoji": "🩹"
+    "emoji": "🩹",
+    "featured": false
   },
   {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
@@ -163,7 +174,8 @@
     "publishedAt": "2026-08-02",
     "readingMinutes": 2,
     "gradient": "from-pink-400 via-fuchsia-400 to-purple-500",
-    "emoji": "🐾"
+    "emoji": "🐾",
+    "featured": false
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
@@ -178,6 +190,7 @@
     "publishedAt": "2026-07-22",
     "readingMinutes": 2,
     "gradient": "from-yellow-400 via-amber-400 to-orange-400",
-    "emoji": "📣"
+    "emoji": "📣",
+    "featured": false
   }
 ]
