@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CATEGORY_ICONS, CATEGORY_LABELS, CATEGORY_ORDER } from "@/content/types";
+import { CATEGORY_LABELS, CATEGORY_ORDER } from "@/content/types";
+import CategoryIcon from "./CategoryIcon";
 
 export default function CategoryTabs() {
   const pathname = usePathname();
@@ -19,12 +20,8 @@ export default function CategoryTabs() {
               active ? "bg-surface-muted text-primary" : "text-foreground/70 hover:bg-surface-muted"
             }`}
           >
-            <span aria-hidden>{CATEGORY_ICONS[key]}</span>
-            <span
-              className={active ? "border-b-2 border-accent pb-0.5" : ""}
-            >
-              {CATEGORY_LABELS[key]}
-            </span>
+            <CategoryIcon category={key} className="h-5 w-5" />
+            <span className={active ? "border-b-2 border-accent pb-0.5" : ""}>{CATEGORY_LABELS[key]}</span>
           </Link>
         );
       })}

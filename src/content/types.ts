@@ -33,16 +33,6 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
   marketinq: "Marketinq",
 };
 
-export const CATEGORY_ICONS: Record<CategoryKey, string> = {
-  azerbaycan: "🇦🇿",
-  dunya: "🌍",
-  biznes: "💼",
-  texnologiya: "💻",
-  ai: "🤖",
-  "sosial-media": "📱",
-  marketinq: "📣",
-};
-
 export const CATEGORY_ORDER: CategoryKey[] = [
   "azerbaycan",
   "dunya",
