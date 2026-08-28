@@ -26,6 +26,21 @@ const TAILWIND_HEX: Record<string, string> = {
   "purple-500": "#a855f7",
   "rose-400": "#fb7185",
   "violet-500": "#8b5cf6",
+  "green-600": "#16a34a",
+  "teal-700": "#0f766e",
+  "cyan-600": "#0891b2",
+  "indigo-700": "#4338ca",
+  "slate-600": "#475569",
+  "stone-500": "#78716c",
+  "amber-600": "#d97706",
+  "orange-700": "#c2410c",
+  "red-500": "#ef4444",
+  "rose-500": "#f43f5e",
+  "rose-600": "#e11d48",
+  "pink-600": "#db2777",
+  "orange-500": "#f97316",
+  "teal-500": "#14b8a6",
+  "emerald-600": "#059669",
 };
 
 const FALLBACK: [string, string, string] = ["#2563eb", "#1d4ed8", "#1e3a8a"];

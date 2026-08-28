@@ -30,7 +30,8 @@
     "readingMinutes": 2,
     "gradient": "from-sky-500 via-blue-500 to-indigo-600",
     "emoji": "⚡",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png"
   },
   {
     "slug": "bakida-sahil-bulvari-layihesi",
@@ -63,7 +64,8 @@
     "readingMinutes": 3,
     "gradient": "from-amber-400 via-yellow-300 to-orange-300",
     "emoji": "☀️",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/vilayetde-gunes-enerjili-mekteb-yemekxanalari-cover.png"
   },
   {
     "slug": "peyvend-nisbetleri-dunyada-yukselir",
@@ -79,7 +81,8 @@
     "readingMinutes": 3,
     "gradient": "from-rose-400 via-orange-300 to-amber-200",
     "emoji": "💉",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/peyvend-nisbetleri-dunyada-yukselir-cover.png"
   },
   {
     "slug": "resif-reklord-suretle-berpa-olunur",
@@ -95,7 +98,8 @@
     "readingMinutes": 2,
     "gradient": "from-cyan-400 via-teal-300 to-emerald-300",
     "emoji": "🪸",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/resif-reklord-suretle-berpa-olunur-cover.png"
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -111,7 +115,8 @@
     "readingMinutes": 3,
     "gradient": "from-emerald-500 via-green-500 to-teal-600",
     "emoji": "💼",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/kicik-sahibkar-destek-fondu-cover.png"
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
@@ -127,7 +132,8 @@
     "readingMinutes": 3,
     "gradient": "from-slate-500 via-sky-500 to-blue-600",
     "emoji": "🔋",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png"
   },
   {
     "slug": "dronla-mese-eken-layihe",
@@ -143,7 +149,8 @@
     "readingMinutes": 3,
     "gradient": "from-emerald-400 via-teal-400 to-cyan-500",
     "emoji": "🌱",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/dronla-mese-eken-layihe-cover.png"
   },
   {
     "slug": "insulin-yamasi-kesfi",
@@ -159,7 +166,8 @@
     "readingMinutes": 3,
     "gradient": "from-violet-500 via-purple-500 to-indigo-600",
     "emoji": "🩹",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/insulin-yamasi-kesfi-cover.png"
   },
   {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
@@ -175,7 +183,8 @@
     "readingMinutes": 2,
     "gradient": "from-pink-400 via-fuchsia-400 to-purple-500",
     "emoji": "🐾",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png"
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
@@ -191,7 +200,8 @@
     "readingMinutes": 2,
     "gradient": "from-yellow-400 via-amber-400 to-orange-400",
     "emoji": "📣",
-    "featured": false
+    "featured": false,
+    "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png"
   },
   {
     "slug": "10-min-aile-dovletden-kiraye-menzil-alib",
@@ -208,7 +218,8 @@
     "gradient": "from-orange-400 via-amber-400 to-yellow-300",
     "emoji": "🏠",
     "sourceUrl": "https://baku.ws/social/azerbaycanda-indiye-qeder-10-minden-cox-sexs-dovletden-kirayeye-menzil-goturub",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/10-min-aile-dovletden-kiraye-menzil-alib-cover.png"
   },
   {
     "slug": "bu-il-nece-metrostansiya-istifadeye-verilecek",
@@ -224,7 +235,8 @@
     "gradient": "from-slate-600 via-blue-600 to-indigo-700",
     "emoji": "🚇",
     "sourceUrl": "https://baku.ws/social/bu-il-nece-metrostansiya-istifadeye-verilecek-resmi-cavab",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/bu-il-nece-metrostansiya-istifadeye-verilecek-cover.png"
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
@@ -240,7 +252,8 @@
     "gradient": "from-teal-500 via-emerald-500 to-green-600",
     "emoji": "🏭",
     "sourceUrl": "https://baku.ws/economy/socar-polymer-7-ayda-ixracdan-154-milyon-dollardan-cox-gelir-elde-edib",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png"
   },
   {
     "slug": "lacinde-isgal-ve-zefer-muzeyi-kompleksi",
@@ -256,11 +269,12 @@
     "gradient": "from-stone-500 via-amber-600 to-orange-700",
     "emoji": "🏛️",
     "sourceUrl": "https://baku.ws/social/lacinda-isgal-ve-zefer-muzeyi-kompleksi-tikilecek-9-9-milyonluq-layihe",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/lacinde-isgal-ve-zefer-muzeyi-kompleksi-cover.png"
   },
   {
     "slug": "premyer-liqa-3-tur-teyinatlari",
-    "category": "azerbaycan",
+    "category": "idman",
     "title": "Premyer Liqada III turun hakim təyinatları açıqlanıb",
     "excerpt": "\"Zirə\"-\"Neftçi\" qarşılaşmasını FIFA referisi Elçin Məsiyev idarə edəcək, \"Araz-Naxçıvan\"-\"Sabah\" və \"Sumqayıt\"-\"Qarabağ\" oyunlarının hakimləri də bəlli olub.",
     "body": [
@@ -272,11 +286,12 @@
     "gradient": "from-green-600 via-emerald-600 to-teal-700",
     "emoji": "⚽",
     "sourceUrl": "https://baku.ws/sports/premyer-liqa-neftci-sabah-ve-qarabag-in-novbeti-oyunlarinin-teyinatlari-aciqlanib",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/premyer-liqa-3-tur-teyinatlari-cover.png"
   },
   {
     "slug": "taekvondo-koreya-sefiri-kubok",
-    "category": "azerbaycan",
+    "category": "idman",
     "title": "Taekvondo üzrə gənclər arasında \"Koreya Səfiri Kuboku\" keçiriləcək",
     "excerpt": "Sentyabrın 25-də Fövqəladə Hallar Nazirliyinin İdman-Sağlamlıq Klubunda 2009-2011-ci il təvəllüdlü gənc idmançılar arasında turnir təşkil olunacaq.",
     "body": [
@@ -288,7 +303,8 @@
     "gradient": "from-red-500 via-rose-500 to-pink-600",
     "emoji": "🥋",
     "sourceUrl": "https://baku.ws/sports/taekvondo-uzre-gencler-arasinda-koreya-sefiri-kuboku-kecirilecek",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/taekvondo-koreya-sefiri-kubok-cover.png"
   },
   {
     "slug": "mirziyoyev-ozbekistan-uculcu-intibah",
@@ -305,7 +321,8 @@
     "gradient": "from-sky-500 via-blue-500 to-cyan-600",
     "emoji": "🎓",
     "sourceUrl": "https://baku.ws/dunya/mirziyoyev-telebe-qizlarin-sayinin-artmasi-ozbekistanda-ucuncu-intibah-dovrunun-elametidir",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-cover.png"
   },
   {
     "slug": "pomidor-doyusu-festivali-la-tomatina",
@@ -321,6 +338,7 @@
     "gradient": "from-red-500 via-orange-500 to-rose-600",
     "emoji": "🍅",
     "sourceUrl": "https://baku.ws/dunya/pomidor-doyusu-festivalindan-rengareng-goruntuler",
-    "sourceName": "Baku.ws"
+    "sourceName": "Baku.ws",
+    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-cover.png"
   }
 ]

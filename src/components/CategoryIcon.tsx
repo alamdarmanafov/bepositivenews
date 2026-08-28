@@ -30,6 +30,18 @@ function DunyaIcon({ className }: IconProps) {
   );
 }
 
+function IdmanIcon({ className }: IconProps) {
+  return (
+    <svg {...commonProps} className={className}>
+      <path d="M7 4h10v3.5a5 5 0 01-5 5 5 5 0 01-5-5V4z" />
+      <path d="M7 5.5H4.8a2 2 0 000 4H7M17 5.5h2.2a2 2 0 010 4H17" />
+      <path d="M12 12.5V16" />
+      <path d="M8.5 19.5l1-3h5l1 3" />
+      <path d="M8 19.5h8" />
+    </svg>
+  );
+}
+
 function BiznesIcon({ className }: IconProps) {
   return (
     <svg {...commonProps} className={className}>
@@ -82,6 +94,7 @@ function MarketinqIcon({ className }: IconProps) {
 const ICONS: Record<CategoryKey, (props: IconProps) => React.JSX.Element> = {
   azerbaycan: AzerbaycanIcon,
   dunya: DunyaIcon,
+  idman: IdmanIcon,
   biznes: BiznesIcon,
   texnologiya: TexnologiyaIcon,
   ai: AiIcon,

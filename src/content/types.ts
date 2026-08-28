@@ -1,6 +1,7 @@
 export type CategoryKey =
   | "azerbaycan"
   | "dunya"
+  | "idman"
   | "biznes"
   | "texnologiya"
   | "ai"
@@ -29,6 +30,7 @@ export type Article = {
 export const CATEGORY_LABELS: Record<CategoryKey, string> = {
   azerbaycan: "Azərbaycan",
   dunya: "Dünya",
+  idman: "İdman",
   biznes: "Biznes",
   texnologiya: "Texnologiya",
   ai: "AI",
@@ -39,6 +41,7 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
 export const CATEGORY_ORDER: CategoryKey[] = [
   "azerbaycan",
   "dunya",
+  "idman",
   "biznes",
   "texnologiya",
   "ai",
