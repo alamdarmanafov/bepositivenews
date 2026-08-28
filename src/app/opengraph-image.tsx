@@ -36,7 +36,7 @@ export default function OpengraphImage() {
             <BrandMark size={50} color="#0f172a" />
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 52, fontWeight: 800, lineHeight: 1 }}>BE POSITIVE</span>
+            <span style={{ fontSize: 52, fontWeight: 800, lineHeight: 1 }}>bepositive</span>
             <span style={{ fontSize: 52, fontWeight: 800, color: "#facc15", lineHeight: 1.1 }}>NEWS</span>
           </div>
         </div>

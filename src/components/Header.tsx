@@ -22,7 +22,7 @@ export default function Header() {
             ✌️
           </span>
           <span className="leading-none">
-            <span className="block text-foreground">BE POSITIVE</span>
+            <span className="block text-foreground">bepositive</span>
             <span className="block text-primary">NEWS</span>
           </span>
         </Link>

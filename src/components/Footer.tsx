@@ -12,7 +12,7 @@ export default function Footer() {
               ✌️
             </span>
             <span>
-              <span className="text-foreground">BE POSITIVE</span> <span className="text-primary">NEWS</span>
+              <span className="text-foreground">bepositive</span> <span className="text-primary">NEWS</span>
             </span>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
 
       <div className="border-t border-border-subtle py-6">
         <Container className="flex items-center justify-center text-xs text-foreground/60">
-          <p>© {new Date().getFullYear()} BE POSITIVE NEWS. Bütün hüquqlar qorunur.</p>
+          <p>© {new Date().getFullYear()} bepositive NEWS. Bütün hüquqlar qorunur.</p>
         </Container>
       </div>
     </footer>
