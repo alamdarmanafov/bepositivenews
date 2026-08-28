@@ -3,6 +3,10 @@ import { cookies } from "next/headers";
 
 const COOKIE_NAME = "bpn_admin";
 
+const MAX_ATTEMPTS = 5;
+const WINDOW_MS = 10 * 60 * 1000;
+const attemptsByKey = new Map<string, { count: number; resetAt: number }>();
+
 function timingSafeEqual(a: string, b: string): boolean {
   const bufA = Buffer.from(a);
   const bufB = Buffer.from(b);
@@ -13,6 +17,28 @@ function timingSafeEqual(a: string, b: string): boolean {
 function sessionToken(): string {
   const password = process.env.ADMIN_PASSWORD ?? "";
   return crypto.createHmac("sha256", password || "unset").update("bpn-admin-session").digest("hex");
+}
+
+/** Naive per-instance throttle: blocks sustained scripted brute-forcing from one IP within a warm function instance. Not a substitute for a strong ADMIN_PASSWORD. */
+export function isRateLimited(key: string): boolean {
+  const now = Date.now();
+  const entry = attemptsByKey.get(key);
+  if (!entry || now > entry.resetAt) return false;
+  return entry.count >= MAX_ATTEMPTS;
+}
+
+export function recordFailedAttempt(key: string): void {
+  const now = Date.now();
+  const entry = attemptsByKey.get(key);
+  if (!entry || now > entry.resetAt) {
+    attemptsByKey.set(key, { count: 1, resetAt: now + WINDOW_MS });
+    return;
+  }
+  entry.count += 1;
+}
+
+export function clearAttempts(key: string): void {
+  attemptsByKey.delete(key);
 }
 
 export function verifyPassword(input: string): boolean {
@@ -34,7 +60,7 @@ export async function setSessionCookie(): Promise<void> {
   store.set(COOKIE_NAME, sessionToken(), {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
+    sameSite: "strict",
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
   });

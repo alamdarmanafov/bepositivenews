@@ -34,12 +34,12 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
 };
 
 export const CATEGORY_ICONS: Record<CategoryKey, string> = {
-  azerbaycan: "🏙️",
+  azerbaycan: "🇦🇿",
   dunya: "🌍",
   biznes: "💼",
   texnologiya: "💻",
-  ai: "✨",
-  "sosial-media": "#️⃣",
+  ai: "🤖",
+  "sosial-media": "📱",
   marketinq: "📣",
 };
 
