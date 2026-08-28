@@ -17,7 +17,7 @@ export default function CategoryTabs() {
             key={key}
             href={`/kateqoriya/${key}`}
             className={`flex shrink-0 items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition-colors sm:px-4 ${
-              active ? "bg-surface-muted text-primary" : "text-foreground/70 hover:bg-surface-muted"
+              active ? "bg-surface-muted text-primary" : "text-foreground/70 hover:bg-surface-muted hover:text-primary"
             }`}
           >
             <CategoryIcon category={key} className="h-5 w-5" />

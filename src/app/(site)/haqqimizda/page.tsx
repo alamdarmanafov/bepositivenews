@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Container from "@/components/Container";
+import { SITE_NAME } from "@/lib/site";
 
-const description = "Be Positive News — müstəqil, yoxlanılmış yaxşı xəbərlər nəşri.";
+const description = `${SITE_NAME} — müstəqil nəşr.`;
 
 export const metadata: Metadata = {
   title: "Haqqımızda",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     canonical: "/haqqimizda",
   },
   openGraph: {
-    title: "Haqqımızda · Be Positive News",
+    title: `Haqqımızda · ${SITE_NAME}`,
     description,
     url: "/haqqimizda",
   },
@@ -21,9 +22,9 @@ export default function AboutPage() {
     <Container className="flex flex-col gap-10 py-10 sm:py-14">
       <div className="mx-auto max-w-2xl text-center">
         <span className="text-xs font-semibold uppercase tracking-wide text-accent">Haqqımızda</span>
-        <h1 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Be Positive News haqqında</h1>
+        <h1 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">{SITE_NAME} haqqında</h1>
         <p className="mt-4 text-lg text-foreground/70">
-          Be Positive News — bir fikir üzərində qurulmuş müstəqil nəşrdir: dünya, başlıqların göstərdiyindən
+          {SITE_NAME} — bir fikir üzərində qurulmuş müstəqil nəşrdir: dünya, başlıqların göstərdiyindən
           qat-qat çox yaxşı xəbərlə yaşayır.
         </p>
       </div>
@@ -46,8 +47,7 @@ export default function AboutPage() {
         <div className="rounded-2xl border border-border-subtle bg-surface p-6">
           <h2 className="text-lg font-bold">Qlobal baxış</h2>
           <p className="mt-2 text-sm text-foreground/70">
-            Hazırda Azərbaycan dilində nəşr edirik və Cənubi Qafqaz oxucularına xidmət göstəririk. İngilis
-            dili də daxil olmaqla daha çox dil planlaşdırılır.
+            Azərbaycan dilində nəşr edirik və Cənubi Qafqaz oxucularına xidmət göstəririk.
           </p>
         </div>
       </div>

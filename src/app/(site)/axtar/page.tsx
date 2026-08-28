@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Container from "@/components/Container";
 import SearchClient from "@/components/SearchClient";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Axtarış",
-  description: "Be Positive News xəbərləri arasında axtarış edin.",
+  description: `${SITE_NAME} xəbərləri arasında axtarış edin.`,
   robots: {
     index: false,
     follow: true,

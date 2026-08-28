@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Container from "@/components/Container";
 import ArticleCard from "@/components/ArticleCard";
 import { getLatestArticles } from "@/content/articles";
+import { SITE_NAME } from "@/lib/site";
 
-const description = "Be Positive News-də dərc olunan bütün xəbərlərin siyahısı.";
+const description = `${SITE_NAME}-də dərc olunan bütün xəbərlərin siyahısı.`;
 
 export const metadata: Metadata = {
   title: "Bütün xəbərlər",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     canonical: "/xeberler",
   },
   openGraph: {
-    title: "Bütün xəbərlər · Be Positive News",
+    title: `Bütün xəbərlər · ${SITE_NAME}`,
     description,
     url: "/xeberler",
   },

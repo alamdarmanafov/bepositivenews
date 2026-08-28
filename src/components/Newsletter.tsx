@@ -21,7 +21,7 @@ export default function Newsletter() {
         </span>
         <div>
           <p className="text-lg font-extrabold">
-            <span className="text-foreground">be positive</span> <span className="text-primary">NEWS</span>
+            <span className="text-foreground">BE POSITIVE</span> <span className="text-primary">NEWS</span>
           </p>
           <p className="text-sm text-foreground/60">Xəbəri oxu, anla.</p>
         </div>

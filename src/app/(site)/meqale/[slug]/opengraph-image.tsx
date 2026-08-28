@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { articles, getArticleBySlug } from "@/content/articles";
 import { CATEGORY_LABELS } from "@/content/types";
 import { gradientToCssStops } from "@/lib/ogGradient";
+import { SITE_NAME } from "@/lib/site";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -67,10 +68,10 @@ export default async function ArticleOpengraphImage({ params }: { params: Promis
             textTransform: "uppercase",
           }}
         >
-          {article ? CATEGORY_LABELS[article.category] : "Be Positive News"}
+          {article ? CATEGORY_LABELS[article.category] : SITE_NAME}
         </span>
         <span style={{ fontSize: 54, fontWeight: 800, lineHeight: 1.15, maxWidth: 1000 }}>
-          {article?.title ?? "Be Positive News"}
+          {article?.title ?? SITE_NAME}
         </span>
       </div>
     ),

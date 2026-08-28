@@ -22,7 +22,7 @@ export default function Header() {
             ✌️
           </span>
           <span className="leading-none">
-            <span className="block text-foreground">be positive</span>
+            <span className="block text-foreground">BE POSITIVE</span>
             <span className="block text-primary">NEWS</span>
           </span>
         </Link>
@@ -62,13 +62,6 @@ export default function Header() {
             className="hidden rounded-full bg-accent px-4 py-2 text-sm font-bold text-accent-foreground transition-opacity hover:opacity-90 sm:inline-block"
           >
             Abunə ol
-          </Link>
-          <Link
-            href="/haqqimizda"
-            aria-label="Hesab"
-            className="hidden h-10 w-10 items-center justify-center rounded-full text-foreground/70 transition-colors hover:bg-surface-muted xl:flex"
-          >
-            👤
           </Link>
           <button
             type="button"

@@ -12,12 +12,9 @@ export default function Footer() {
               ✌️
             </span>
             <span>
-              <span className="text-foreground">be positive</span> <span className="text-primary">NEWS</span>
+              <span className="text-foreground">BE POSITIVE</span> <span className="text-primary">NEWS</span>
             </span>
           </div>
-          <p className="mt-3 max-w-xs text-sm text-foreground/70">
-            Yoxlanılmış, ürəkaçan xəbərlər — Azərbaycan, dünya, biznes, texnologiya və süni intellekt sahələrindən.
-          </p>
         </div>
 
         <div>
@@ -57,14 +54,12 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground/60">Dil</h3>
           <p className="mt-3 text-sm text-foreground/80">Azərbaycan dili</p>
-          <p className="mt-1 text-xs text-foreground/50">İngilis dili tezliklə əlavə olunacaq.</p>
         </div>
       </Container>
 
       <div className="border-t border-border-subtle py-6">
-        <Container className="flex flex-col items-center justify-between gap-2 text-xs text-foreground/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Be Positive News. Bütün hüquqlar qorunur.</p>
-          <p>Yoxlanılmış yaxşı xəbərlər.</p>
+        <Container className="flex items-center justify-center text-xs text-foreground/60">
+          <p>© {new Date().getFullYear()} BE POSITIVE NEWS. Bütün hüquqlar qorunur.</p>
         </Container>
       </div>
     </footer>

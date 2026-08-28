@@ -11,7 +11,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <header className="border-b border-border-subtle bg-surface">
         <div className="mx-auto flex h-14 max-w-4xl items-center justify-between px-4">
           <span className="text-sm font-extrabold tracking-tight">
-            <span className="text-foreground">be positive</span> <span className="text-primary">NEWS</span>{" "}
+            <span className="text-foreground">BE POSITIVE</span> <span className="text-primary">NEWS</span>{" "}
             <span className="text-foreground/40">· admin</span>
           </span>
           <Link href="/" className="text-sm font-medium text-foreground/60 hover:text-primary">

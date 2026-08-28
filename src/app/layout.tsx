@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Yoxlanılmış yaxşı xəbərlər`,
+    default: SITE_NAME,
     template: `%s · ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "az_AZ",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Yoxlanılmış yaxşı xəbərlər`,
+    title: SITE_NAME,
     description: SITE_DESCRIPTION,
     url: "/",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Yoxlanılmış yaxşı xəbərlər`,
+    title: SITE_NAME,
     description: SITE_DESCRIPTION,
   },
   robots: {
