@@ -36,6 +36,8 @@ export default function ArticleForm(props: Props) {
   const [publishedAt, setPublishedAt] = useState(initial?.publishedAt ?? new Date().toISOString().slice(0, 10));
   const [readingMinutes, setReadingMinutes] = useState(initial?.readingMinutes ?? 3);
   const [featured, setFeatured] = useState(initial?.featured ?? false);
+  const [sourceUrl, setSourceUrl] = useState(initial?.sourceUrl ?? "");
+  const [sourceName, setSourceName] = useState(initial?.sourceName ?? "");
 
   const [existingImage, setExistingImage] = useState(initial?.image);
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -123,6 +125,8 @@ export default function ArticleForm(props: Props) {
       gradient: initial?.gradient,
       emoji: initial?.emoji,
       featured,
+      sourceUrl: sourceUrl.trim() || undefined,
+      sourceName: sourceName.trim() || undefined,
     };
 
     const url = props.mode === "create" ? "/api/admin/articles" : `/api/admin/articles/${initial!.slug}`;
@@ -303,6 +307,34 @@ export default function ArticleForm(props: Props) {
             required
             value={readingMinutes}
             onChange={(event) => setReadingMinutes(Number(event.target.value))}
+            className={inputClass}
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="sourceUrl" className={labelClass}>
+            Mənbə linki (istəyə bağlı)
+          </label>
+          <input
+            id="sourceUrl"
+            type="url"
+            value={sourceUrl}
+            onChange={(event) => setSourceUrl(event.target.value)}
+            placeholder="https://..."
+            className={inputClass}
+          />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="sourceName" className={labelClass}>
+            Mənbə adı (istəyə bağlı)
+          </label>
+          <input
+            id="sourceName"
+            value={sourceName}
+            onChange={(event) => setSourceName(event.target.value)}
+            placeholder="məs. Baku.ws"
             className={inputClass}
           />
         </div>

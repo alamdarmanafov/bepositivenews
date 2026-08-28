@@ -67,6 +67,7 @@ export default async function ArticlePage({ params }: Props) {
       name: SITE_NAME,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/icon` },
     },
+    ...(article.sourceUrl ? { isBasedOn: article.sourceUrl } : {}),
   };
 
   return (
@@ -106,6 +107,20 @@ export default async function ArticlePage({ params }: Props) {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
+
+        {article.sourceUrl && (
+          <p className="border-t border-border-subtle pt-4 text-sm text-foreground/50">
+            Mənbə:{" "}
+            <a
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="font-medium text-primary hover:underline"
+            >
+              {article.sourceName ?? article.sourceUrl}
+            </a>
+          </p>
+        )}
       </article>
 
       {related.length > 0 && (

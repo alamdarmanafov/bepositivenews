@@ -21,6 +21,9 @@ export type Article = {
   /** Legacy fallback visuals, used only when image is absent. */
   gradient?: string;
   emoji?: string;
+  /** Original source, shown as an attribution link at the end of the article. */
+  sourceUrl?: string;
+  sourceName?: string;
 };
 
 export const CATEGORY_LABELS: Record<CategoryKey, string> = {
