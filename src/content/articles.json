@@ -34,7 +34,6 @@
   },
   {
     "slug": "bakida-sahil-bulvari-layihesi",
-    "category": "azerbaycan",
     "title": "Bakıda yeni sahil bulvarı layihəsinə start verildi",
     "excerpt": "Şəhərin qərb hissəsində açılacaq yeni bulvar piyada zolaqları, velosiped yolları və ictimai istirahət sahələri ilə tamamlanacaq.",
     "body": [
@@ -42,8 +41,10 @@
       "Bələdiyyə nümayəndələri bildirir ki, layihə həm ictimai nəqliyyatla əlaqəni yaxşılaşdıracaq, həm də sahil boyu yeni kiçik biznes sahələri üçün imkan yaradacaq.",
       "Sakinlərin təklifləri əsasında hazırlanan layihə artıq açıq müzakirə mərhələsindədir."
     ],
+    "category": "azerbaycan",
     "publishedAt": "2026-08-16",
     "readingMinutes": 2,
+    "image": "/uploads/bakida-sahil-bulvari-layihesi-1787898827654.jpg",
     "gradient": "from-cyan-500 via-sky-500 to-blue-600",
     "emoji": "🌅",
     "featured": false
