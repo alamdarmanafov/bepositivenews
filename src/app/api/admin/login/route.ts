@@ -1,5 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { clearAttempts, isRateLimited, recordFailedAttempt, setSessionCookie, verifyPassword } from "@/lib/adminAuth";
+import {
+  clearAttempts,
+  isRateLimited,
+  recordFailedAttempt,
+  setSessionCookie,
+  verifyEmail,
+  verifyPassword,
+} from "@/lib/adminAuth";
 
 function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -20,11 +27,17 @@ export async function POST(request: NextRequest) {
   }
 
   const body = await request.json().catch(() => null);
+  const email = body?.email;
   const password = body?.password;
 
-  if (typeof password !== "string" || !verifyPassword(password)) {
+  if (
+    typeof email !== "string" ||
+    typeof password !== "string" ||
+    !verifyEmail(email) ||
+    !verifyPassword(password)
+  ) {
     recordFailedAttempt(key);
-    return NextResponse.json({ error: "Yanlış parol." }, { status: 401 });
+    return NextResponse.json({ error: "Yanlış email və ya parol." }, { status: 401 });
   }
 
   clearAttempts(key);

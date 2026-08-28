@@ -47,6 +47,12 @@ export function verifyPassword(input: string): boolean {
   return timingSafeEqual(input, password);
 }
 
+export function verifyEmail(input: string): boolean {
+  const email = process.env.ADMIN_EMAIL;
+  if (!email) return false;
+  return timingSafeEqual(input.trim().toLowerCase(), email.trim().toLowerCase());
+}
+
 export async function isAuthenticated(): Promise<boolean> {
   if (!process.env.ADMIN_PASSWORD) return false;
   const store = await cookies();

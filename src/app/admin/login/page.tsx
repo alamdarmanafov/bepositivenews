@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function AdminLoginPage() {
   const router = useRouter();
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -17,7 +18,7 @@ export default function AdminLoginPage() {
     const res = await fetch("/api/admin/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
+      body: JSON.stringify({ email, password }),
     });
 
     setLoading(false);
@@ -35,6 +36,19 @@ export default function AdminLoginPage() {
     <div className="mx-auto flex max-w-sm flex-col gap-6 px-4 py-20">
       <h1 className="text-2xl font-black tracking-tight">Admin girişi</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+        <label htmlFor="email" className="sr-only">
+          Email
+        </label>
+        <input
+          id="email"
+          type="email"
+          required
+          autoFocus
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          placeholder="Email"
+          className="rounded-full border border-border-subtle bg-surface px-5 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+        />
         <label htmlFor="password" className="sr-only">
           Parol
         </label>
@@ -42,7 +56,6 @@ export default function AdminLoginPage() {
           id="password"
           type="password"
           required
-          autoFocus
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           placeholder="Parol"
