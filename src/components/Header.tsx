@@ -18,7 +18,7 @@ export default function Header() {
           className="flex shrink-0 items-center gap-2 text-lg font-extrabold tracking-tight"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-lg text-accent-foreground">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-mark-bg text-lg text-brand-mark-foreground">
             ✌️
           </span>
           <span className="leading-none">

@@ -10,6 +10,8 @@
   --primary-foreground: #ffffff;
   --accent: #facc15;
   --accent-foreground: #0f172a;
+  --brand-mark-bg: #1d4ed8;
+  --brand-mark-foreground: #ffffff;
 }
 
 @theme inline {
@@ -22,6 +24,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-brand-mark-bg: var(--brand-mark-bg);
+  --color-brand-mark-foreground: var(--brand-mark-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -36,6 +40,8 @@
   --primary-foreground: #0b1220;
   --accent: #facc15;
   --accent-foreground: #0f172a;
+  --brand-mark-bg: #facc15;
+  --brand-mark-foreground: #0f172a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +55,8 @@
     --primary-foreground: #0b1220;
     --accent: #facc15;
     --accent-foreground: #0f172a;
+    --brand-mark-bg: #facc15;
+    --brand-mark-foreground: #0f172a;
   }
 }
 

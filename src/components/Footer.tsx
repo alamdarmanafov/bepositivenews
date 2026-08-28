@@ -8,7 +8,7 @@ export default function Footer() {
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 text-lg font-extrabold tracking-tight">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-base text-accent-foreground">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-mark-bg text-base text-brand-mark-foreground">
               ✌️
             </span>
             <span>

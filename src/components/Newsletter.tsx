@@ -16,7 +16,7 @@ export default function Newsletter() {
       className="flex flex-col items-center justify-between gap-6 rounded-2xl border border-border-subtle bg-surface p-6 sm:flex-row sm:p-8"
     >
       <div className="flex items-center gap-3 text-center sm:text-left">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent text-xl text-accent-foreground">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-mark-bg text-xl text-brand-mark-foreground">
           ✌️
         </span>
         <div>
