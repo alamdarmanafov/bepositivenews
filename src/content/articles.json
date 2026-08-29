@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -149,7 +149,7 @@
     "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
     "gradient": "from-teal-500 via-emerald-500 to-green-600",
     "emoji": "🏭",
-    "featured": true,
+    "featured": false,
     "sourceUrl": "https://baku.ws/economy/socar-polymer-7-ayda-ixracdan-154-milyon-dollardan-cox-gelir-elde-edib",
     "sourceName": "Baku.ws"
   }
