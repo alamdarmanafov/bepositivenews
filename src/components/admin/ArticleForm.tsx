@@ -13,6 +13,8 @@ const inputClass =
 const labelClass = "text-sm font-semibold";
 
 const MAX_IMAGE_BYTES = 2 * 1024 * 1024;
+const MAX_ORIGINAL_BYTES = 20 * 1024 * 1024;
+const MAX_DIMENSION = 1600;
 
 function readFileAsDataUrl(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -21,6 +23,47 @@ function readFileAsDataUrl(file: File): Promise<string> {
     reader.onerror = () => reject(reader.error);
     reader.readAsDataURL(file);
   });
+}
+
+function loadImageElement(file: File): Promise<HTMLImageElement> {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new window.Image();
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      resolve(img);
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error("Şəkil oxuna bilmədi."));
+    };
+    img.src = url;
+  });
+}
+
+/** Downscales to at most MAX_DIMENSION and re-encodes as JPEG so uploads stay small. */
+async function compressImage(file: File): Promise<File> {
+  const img = await loadImageElement(file);
+  const scale = Math.min(1, MAX_DIMENSION / Math.max(img.naturalWidth, img.naturalHeight));
+  const width = Math.round(img.naturalWidth * scale);
+  const height = Math.round(img.naturalHeight * scale);
+
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return file;
+  ctx.drawImage(img, 0, 0, width, height);
+
+  const toBlob = (quality: number) =>
+    new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/jpeg", quality));
+
+  let blob = await toBlob(0.82);
+  if (blob && blob.size > MAX_IMAGE_BYTES) blob = await toBlob(0.6);
+  if (!blob) return file;
+
+  const name = file.name.replace(/\.[^./]+$/, "") + ".jpg";
+  return new File([blob], name, { type: "image/jpeg" });
 }
 
 export default function ArticleForm(props: Props) {
@@ -42,6 +85,7 @@ export default function ArticleForm(props: Props) {
   const [existingImage, setExistingImage] = useState(initial?.image);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [compressingImage, setCompressingImage] = useState(false);
 
   const [submitting, setSubmitting] = useState(false);
   const [uploadingImage, setUploadingImage] = useState(false);
@@ -106,14 +150,30 @@ export default function ArticleForm(props: Props) {
       setError("Yalnız JPG, PNG və ya WEBP şəkillərinə icazə var.");
       return;
     }
-    if (file.size > MAX_IMAGE_BYTES) {
-      setError("Şəkil 2MB-dan kiçik olmalıdır.");
+    if (file.size > MAX_ORIGINAL_BYTES) {
+      setError("Şəkil 20MB-dan kiçik olmalıdır.");
       return;
     }
 
     setError("");
-    setImageFile(file);
-    setImagePreview(await readFileAsDataUrl(file));
+    setCompressingImage(true);
+    let compressed: File;
+    try {
+      compressed = await compressImage(file);
+    } catch {
+      setCompressingImage(false);
+      setError("Şəkil emal edilə bilmədi.");
+      return;
+    }
+    setCompressingImage(false);
+
+    if (compressed.size > MAX_IMAGE_BYTES) {
+      setError("Şəkil sıxıldıqdan sonra da çox böyükdür — daha kiçik ölçülü şəkil sınayın.");
+      return;
+    }
+
+    setImageFile(compressed);
+    setImagePreview(await readFileAsDataUrl(compressed));
   }
 
   function removeImage() {
@@ -317,7 +377,11 @@ export default function ArticleForm(props: Props) {
 
       <div className="flex flex-col gap-1.5">
         <label className={labelClass}>Şəkil</label>
-        {displayedImage ? (
+        {compressingImage ? (
+          <div className="flex h-40 w-full items-center justify-center rounded-xl border-2 border-dashed border-border-subtle text-sm text-foreground/50">
+            Şəkil sıxılır…
+          </div>
+        ) : displayedImage ? (
           <div className="relative h-40 w-full overflow-hidden rounded-xl border border-border-subtle">
             <Image src={displayedImage} alt="" fill unoptimized className="object-cover" />
             <button
@@ -334,7 +398,7 @@ export default function ArticleForm(props: Props) {
             className="flex h-40 w-full cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-border-subtle text-sm text-foreground/50 hover:border-primary hover:text-primary"
           >
             <span>Şəkil seçmək üçün klikləyin</span>
-            <span className="text-xs">JPG, PNG və ya WEBP · maks. 2MB</span>
+            <span className="text-xs">JPG, PNG və ya WEBP · avtomatik sıxılacaq</span>
           </label>
         )}
         <input
