@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -137,20 +137,20 @@
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
-    "category": "biznes",
     "title": "SOCAR Polymer 7 ayda ixracdan 154 milyon dollardan çox gəlir əldə edib",
     "excerpt": "Şirkət 2026-cı ilin yanvar-iyul aylarında 154,4 milyon dollarlıq məhsul ixrac edib; ölkənin qeyri-neft-qaz ixracı isə 18,3% artaraq 2,5 milyard dollara çatıb.",
     "body": [
       "SOCAR-ın 57%-lik törəməsi olan \"SOCAR Polymer\" MMC bu ilin ilk yeddi ayında 154,4 milyon ABŞ dolları dəyərində məhsul ixrac edib. Məlumat İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzinin \"İxrac İcmalı\"nda yer alıb.",
       "Göstərici keçən ilin eyni dövrü ilə müqayisədə 2,2% (3,5 milyon dollar) aşağı olsa da, ölkə üzrə ümumi mənzərə müsbətdir: yanvar-iyul aylarında Azərbaycanın qeyri-neft-qaz sektoru üzrə ixracı 18,3% artaraq 2,5 milyard dollara çatıb."
     ],
+    "category": "biznes",
     "publishedAt": "2026-08-28",
     "readingMinutes": 2,
+    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
     "gradient": "from-teal-500 via-emerald-500 to-green-600",
     "emoji": "🏭",
+    "featured": true,
     "sourceUrl": "https://baku.ws/economy/socar-polymer-7-ayda-ixracdan-154-milyon-dollardan-cox-gelir-elde-edib",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
-    "featured": false
+    "sourceName": "Baku.ws"
   }
 ]
