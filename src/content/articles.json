@@ -103,7 +103,6 @@
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
-    "category": "biznes",
     "title": "Kiçik sahibkarlar üçün yeni dəstək fondu 5000-dən çox işəgötürənə kömək etdi",
     "excerpt": "Aşağı faizli mikro-kreditlər proqramı ilk ilində minlərlə kiçik biznesin genişlənməsinə və yeni iş yerlərinin açılmasına dəstək verdi.",
     "body": [
@@ -111,12 +110,13 @@
       "Dəstək alan sahibkarların bir hissəsi əlavə işçi qüvvəsi cəlb edib, digərləri isə istehsalı genişləndirərək yeni bazarlara çıxıb.",
       "Fondun idarəçiləri gələn il büdcəni ikiqat artıraraq daha çox regionu əhatə etməyi planlaşdırır."
     ],
+    "category": "biznes",
     "publishedAt": "2026-08-08",
     "readingMinutes": 3,
+    "image": "/uploads/kicik-sahibkar-destek-fondu-1788027495549.jpg",
     "gradient": "from-emerald-500 via-green-500 to-teal-600",
     "emoji": "💼",
-    "featured": false,
-    "image": "/uploads/kicik-sahibkar-destek-fondu-cover.png"
+    "featured": false
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
