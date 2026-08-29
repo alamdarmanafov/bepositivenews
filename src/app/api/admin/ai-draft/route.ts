@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import Anthropic from "@anthropic-ai/sdk";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
+import OpenAI from "openai";
+import { zodTextFormat } from "openai/helpers/zod";
 import { isAuthenticated } from "@/lib/adminAuth";
 import { CATEGORY_LABELS, CATEGORY_ORDER } from "@/content/types";
 
@@ -22,8 +22,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Giriş tələb olunur." }, { status: 401 });
   }
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return NextResponse.json({ error: "ANTHROPIC_API_KEY mühit dəyişəni təyin olunmayıb." }, { status: 500 });
+  if (!process.env.OPENAI_API_KEY) {
+    return NextResponse.json({ error: "OPENAI_API_KEY mühit dəyişəni təyin olunmayıb." }, { status: 500 });
   }
 
   const body = await request.json().catch(() => null);
@@ -42,26 +42,22 @@ export async function POST(request: NextRequest) {
   const categoryList = CATEGORY_ORDER.map((key) => `${key} (${CATEGORY_LABELS[key]})`).join(", ");
 
   try {
-    const client = new Anthropic();
-    const response = await client.messages.parse({
-      model: "claude-opus-5",
-      max_tokens: 16000,
-      output_config: {
-        effort: "medium",
-        format: zodOutputFormat(DraftSchema),
-      },
-      system:
+    const client = new OpenAI();
+    const response = await client.responses.parse({
+      model: "gpt-5.1",
+      instructions:
         'Sən "bepositive NEWS" adlı Azərbaycan dilli xəbər saytı üçün redaktorsan. Sənə verilən mənbə mətni əsasında Azərbaycan dilində orijinal, öz sözlərinlə yazılmış (birbaşa köçürülməmiş) qısa xəbər hazırla. Faktları, rəqəmləri və adları dəyişmə və uydurma. Başlıq qısa və dəqiq olsun, qısa təsvir 1-2 cümlə olsun, mətn 2-4 paraqrafdan ibarət olsun. Mümkün kateqoriyalar: ' +
         categoryList +
         ". Mətnə ən uyğun kateqoriyanı seç.",
-      messages: [{ role: "user", content: sourceText }],
+      input: sourceText,
+      text: { format: zodTextFormat(DraftSchema, "article_draft") },
     });
 
-    if (!response.parsed_output) {
+    if (!response.output_parsed) {
       return NextResponse.json({ error: "AI cavabı emal edilmədi. Yenidən cəhd edin." }, { status: 502 });
     }
 
-    return NextResponse.json(response.parsed_output);
+    return NextResponse.json(response.output_parsed);
   } catch (error) {
     console.error("AI draft error:", error);
     return NextResponse.json({ error: "AI xəbəri hazırlaya bilmədi." }, { status: 502 });
