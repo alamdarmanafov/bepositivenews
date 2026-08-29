@@ -68,23 +68,6 @@
     "featured": true
   },
   {
-    "slug": "insulin-yamasi-kesfi",
-    "category": "texnologiya",
-    "title": "Bir sikkə ölçüsündə yama gündəlik insulin iynələrini əvəz edə bilər",
-    "excerpt": "Klinik sınaqlarda uğur qazanan yeni yapışqan yama qan şəkərinə uyğun olaraq insulini avtomatik buraxır və gündəlik iynə ehtiyacını aradan qaldırır.",
-    "body": [
-      "Yamanın daxilindəki mikro iynələr dəri altına ağrısız şəkildə nüfuz edir və qanda şəkər səviyyəsi yüksəldikdə insulini avtomatik sərbəst buraxır. Bu, xüsusilə uşaqlar üçün gündəlik iynə stresini aradan qaldırır.",
-      "İlkin sınaqlarda iştirakçıların əksəriyyəti yamanı adi iynədən daha rahat və etibarlı hesab edib. Qan şəkəri nəzarəti isə ənənəvi üsulla müqayisədə eyni səviyyədə qalıb.",
-      "Geniş miqyaslı sınaqlar davam edir və tədqiqatçılar məhsulun bir neçə il ərzində əczaxanalarda satışa çıxmasını gözləyirlər."
-    ],
-    "publishedAt": "2026-06-28",
-    "readingMinutes": 3,
-    "gradient": "from-violet-500 via-purple-500 to-indigo-600",
-    "emoji": "🩹",
-    "featured": false,
-    "image": "/uploads/insulin-yamasi-kesfi-cover.png"
-  },
-  {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
     "title": "Sosial media kampaniyası bir həftədə 200 itkin heyvanın sahibini tapdı",
     "excerpt": "Yerli icma qrupları tərəfindən başladılan paylaşım zənciri könüllülərin köməyi ilə yüzlərlə itkin heyvanı sahiblərinə qovuşdurub.",
