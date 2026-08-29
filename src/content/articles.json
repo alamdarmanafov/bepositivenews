@@ -295,21 +295,20 @@
   },
   {
     "slug": "taekvondo-koreya-sefiri-kubok",
-    "category": "idman",
     "title": "Taekvondo üzrə gənclər arasında \"Koreya Səfiri Kuboku\" keçiriləcək",
     "excerpt": "Sentyabrın 25-də Fövqəladə Hallar Nazirliyinin İdman-Sağlamlıq Klubunda 2009-2011-ci il təvəllüdlü gənc idmançılar arasında turnir təşkil olunacaq.",
     "body": [
       "Azərbaycan Taekvondo Federasiyasının təşkilatçılığı ilə sentyabrın 25-də Fövqəladə Hallar Nazirliyinin İdman-Sağlamlıq Klubunda gənclər arasında \"Koreya Səfiri Kuboku\" turniri keçiriləcək.",
       "Yarışda ölkənin müxtəlif şəhər və rayonlarını təmsil edən klublardan 2009-2011-ci il təvəllüdlü oğlan və qız idmançılar mübarizə aparacaq. Komandaların son qeydiyyat tarixi 17 sentyabr, saat 15:00-dır."
     ],
+    "category": "idman",
     "publishedAt": "2026-08-28",
     "readingMinutes": 2,
+    "image": "/uploads/taekvondo-koreya-sefiri-kubok-1788027048582.jpg",
     "gradient": "from-red-500 via-rose-500 to-pink-600",
     "emoji": "🥋",
-    "sourceUrl": "https://baku.ws/sports/taekvondo-uzre-gencler-arasinda-koreya-sefiri-kuboku-kecirilecek",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/taekvondo-koreya-sefiri-kubok-cover.png",
-    "featured": false
+    "featured": false,
+    "sourceName": "Baku.ws"
   },
   {
     "slug": "mirziyoyev-ozbekistan-uculcu-intibah",
