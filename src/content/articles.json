@@ -31,7 +31,7 @@
     "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png",
     "gradient": "from-sky-500 via-blue-500 to-indigo-600",
     "emoji": "⚡",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -120,7 +120,6 @@
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
-    "category": "marketinq",
     "title": "Uğurlu marketinq kampaniyaları bu il xeyriyyəçiliyə rekord məbləğ yönəltdi",
     "excerpt": "Brendlərin satışlarının bir hissəsini birbaşa sosial layihələrə yönləndirən kampaniyalar həm satışları artırıb, həm də icmalara real dəstək olub.",
     "body": [
@@ -128,12 +127,13 @@
       "Marketoloqlar bildirir ki, şəffaflıq açarıdır — istehlakçılar vəsaitin harada xərcləndiyini dəqiq görmək istəyir və bu, kampaniyaların uğurunu artırır.",
       "Trendin davam edəcəyi gözlənilir, çünki gənc auditoriya sosial təsiri brend seçimində əsas amillərdən biri hesab edir."
     ],
+    "category": "marketinq",
     "publishedAt": "2026-07-22",
     "readingMinutes": 2,
+    "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png",
     "gradient": "from-yellow-400 via-amber-400 to-orange-400",
     "emoji": "📣",
-    "featured": false,
-    "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png"
+    "featured": true
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
