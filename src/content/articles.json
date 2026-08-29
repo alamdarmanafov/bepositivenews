@@ -332,21 +332,20 @@
   },
   {
     "slug": "pomidor-doyusu-festivali-la-tomatina",
-    "category": "dunya",
     "title": "İspaniyada \"La Tomatina\" pomidor döyüşü festivalı 79-cu dəfə keçirildi",
     "excerpt": "Bunyol şəhərində minlərlə insanın iştirak etdiyi ənənəvi festivalda bir saat ərzində 165 tondan çox yetişmiş pomidor atılıb, iştirakçıların 40%-i xarici ölkələrdən gəlib.",
     "body": [
       "İspaniyanın Bunyol şəhərində məşhur \"La Tomatina\" pomidor döyüşü festivalı 79-cu dəfə keçirilib. Avqustun son çərşənbə günü baş tutan tədbirdə bir saatdan çox müddətdə 165 tondan çox yetişmiş pomidor ətrafa atılıb.",
       "Bu il festivalda 20 000-dən çox insanın iştirak etməsi gözlənilirdi, iştirakçıların təxminən 40%-i İspaniya xaricindən gəlib. Festivalın tarixi 1945-ci ilə, kiçik bir parad zamanı baş verən zarafatyana davaya gedib çıxır və illər ərzində şəhərin ən məşhur ənənəsinə çevrilib."
     ],
+    "category": "dunya",
     "publishedAt": "2026-08-28",
     "readingMinutes": 2,
+    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-1788026948041.webp",
     "gradient": "from-red-500 via-orange-500 to-rose-600",
     "emoji": "🍅",
-    "sourceUrl": "https://baku.ws/dunya/pomidor-doyusu-festivalindan-rengareng-goruntuler",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-cover.png",
-    "featured": false
+    "featured": true,
+    "sourceName": "Baku.ws"
   },
   {
     "slug": "media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi",
@@ -361,7 +360,7 @@
     "publishedAt": "2026-08-29",
     "readingMinutes": 2,
     "image": "/uploads/media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi-1788026568153.jpg",
-    "featured": true,
+    "featured": false,
     "sourceName": "Baku.ws"
   }
 ]
