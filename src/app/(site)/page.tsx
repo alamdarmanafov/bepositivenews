@@ -16,9 +16,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const latest = getLatestArticles();
-  const heroSlides = latest.slice(0, 10);
-  const sideCards = latest.slice(10, 13);
-  const gridArticles = latest.slice(13, 19);
+  // With few articles, spread them across hero/side/grid instead of dumping
+  // everything into the hero slider and leaving the rest of the page empty.
+  const heroCount = latest.length >= 10 ? 10 : latest.length >= 4 ? Math.ceil(latest.length / 2) : latest.length;
+  const heroSlides = latest.slice(0, heroCount);
+  const afterHero = latest.slice(heroCount);
+  const sideCount = Math.min(3, afterHero.length);
+  const sideCards = afterHero.slice(0, sideCount);
+  const gridArticles = afterHero.slice(sideCount, sideCount + 6);
 
   return (
     <Container className="flex flex-col gap-10 py-6 sm:py-10">
