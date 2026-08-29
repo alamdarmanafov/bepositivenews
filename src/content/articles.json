@@ -51,23 +51,6 @@
     "featured": false
   },
   {
-    "slug": "batareya-tekrar-emali-yeni-bazar",
-    "title": "Elektrikli avtomobil batareyalarının ucuz təkrar emalı yeni bazar yaradır",
-    "excerpt": "Tədqiqatçıların hazırladığı yeni kimyəvi proses batareya tullantılarından litium və kobaltı əvvəlki üsullardan qat-qat ucuz qiymətə ayırmağa imkan verir.",
-    "body": [
-      "Yeni proses yüksək temperatur tələb edən ənənəvi əritmə üsulu əvəzinə otaq temperaturunda işləyən su əsaslı reaksiyadan istifadə edir. Bu, həm enerji sərfiyyatını, həm də zərərli tullantıları xeyli azaldır.",
-      "İlkin sənaye sınaqlarında geri qazanılan materialların keyfiyyəti yeni batareya istehsalı üçün yararlı səviyyədə olub — bu da sahədə yeni iş yerləri və investisiya imkanları yaradıb.",
-      "Şirkət bu ilin sonuna qədər kommersiya miqyasında ilk zavodu işə salmağı planlaşdırır."
-    ],
-    "category": "biznes",
-    "publishedAt": "2026-07-18",
-    "readingMinutes": 3,
-    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png",
-    "gradient": "from-slate-500 via-sky-500 to-blue-600",
-    "emoji": "🔋",
-    "featured": false
-  },
-  {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
     "title": "Sosial media kampaniyası bir həftədə 200 itkin heyvanın sahibini tapdı",
     "excerpt": "Yerli icma qrupları tərəfindən başladılan paylaşım zənciri könüllülərin köməyi ilə yüzlərlə itkin heyvanı sahiblərinə qovuşdurub.",
