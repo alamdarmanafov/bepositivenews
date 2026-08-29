@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <Container className="flex flex-col gap-10 py-6 sm:py-10">
-      <h1 className="sr-only">{SITE_NAME} — Azərbaycan və dünyadan xəbərlər</h1>
+      <h1 className="sr-only">{SITE_NAME} — Texnologiya, süni intellekt və marketinq xəbərləri</h1>
 
       <section className="grid gap-4 lg:grid-cols-3 lg:items-stretch">
         <div className="h-72 sm:h-96 lg:h-auto lg:col-span-2">

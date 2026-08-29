@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -32,74 +32,6 @@
     "emoji": "⚡",
     "featured": false,
     "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png"
-  },
-  {
-    "slug": "bakida-sahil-bulvari-layihesi",
-    "title": "Bakıda yeni sahil bulvarı layihəsinə start verildi",
-    "excerpt": "Şəhərin qərb hissəsində açılacaq yeni bulvar piyada zolaqları, velosiped yolları və ictimai istirahət sahələri ilə tamamlanacaq.",
-    "body": [
-      "Layihə çərçivəsində sahilboyu ərazidə yaşıllaşdırma işləri aparılacaq, uşaq meydançaları və açıq idman sahələri quraşdırılacaq. İlk mərhələ bu ilin sonuna qədər başa çatdırılacaq.",
-      "Bələdiyyə nümayəndələri bildirir ki, layihə həm ictimai nəqliyyatla əlaqəni yaxşılaşdıracaq, həm də sahil boyu yeni kiçik biznes sahələri üçün imkan yaradacaq.",
-      "Sakinlərin təklifləri əsasında hazırlanan layihə artıq açıq müzakirə mərhələsindədir."
-    ],
-    "category": "azerbaycan",
-    "publishedAt": "2026-08-16",
-    "readingMinutes": 2,
-    "image": "/uploads/bakida-sahil-bulvari-layihesi-1787898827654.jpg",
-    "gradient": "from-cyan-500 via-sky-500 to-blue-600",
-    "emoji": "🌅",
-    "featured": false
-  },
-  {
-    "slug": "vilayetde-gunes-enerjili-mekteb-yemekxanalari",
-    "category": "azerbaycan",
-    "title": "Bir vilayətdə 40 məktəb yeməkxanası artıq günəş enerjisi ilə işləyir",
-    "excerpt": "İcma tərəfindən dəstəklənən günəş bişirmə proqramı yanacaq xərclərini 70% azaldıb və uşaqların davamiyyətini yüksəldib.",
-    "body": [
-      "Əvvəllər hər gün odun və qaz üçün resurs ayıran məktəb yeməkxanaları indi günəş panelləri ilə işləyən bişirici qazanlardan istifadə edir. Layihə ilk növbədə üç kənddə sınaqdan keçirilib, sonra bütün vilayətə yayılıb.",
-      "Yanacağa qənaət olunan vəsait əlavə dərs materialları və məktəb nəqliyyatı üçün yönəldilib. Valideynlər uşaqların davamiyyətinin xüsusilə qış aylarında yaxşılaşdığını qeyd edir.",
-      "Layihənin təşkilatçıları modeli qonşu vilayətlərə tətbiq etmək üçün yerli hökumətlə danışıqlar aparır."
-    ],
-    "publishedAt": "2026-08-11",
-    "readingMinutes": 3,
-    "gradient": "from-amber-400 via-yellow-300 to-orange-300",
-    "emoji": "☀️",
-    "featured": false,
-    "image": "/uploads/vilayetde-gunes-enerjili-mekteb-yemekxanalari-cover.png"
-  },
-  {
-    "slug": "peyvend-nisbetleri-dunyada-yukselir",
-    "category": "dunya",
-    "title": "İllərlə fasilədən sonra uşaq peyvəndi göstəriciləri dünyada yenidən yüksəlir",
-    "excerpt": "Pandemiya illərində geri düşən uşaq peyvəndi proqramları bir çox ölkədə bərpa olunur və sağlamlıq işçilərinin sayı artır.",
-    "body": [
-      "Son bir ildə onlarla ölkədə uşaq peyvəndi əhatəsi pandemiyadan əvvəlki səviyyəni ötüb keçib. Bunun əsas səbəbi kənd yerlərinə çıxan mobil sağlamlıq briqadalarının sayının artması və yerli icma liderlərinin valideynlərlə birbaşa ünsiyyətidir.",
-      "Xüsusilə çətin çatılan bölgələrdə soyuq zəncir logistikası yaxşılaşdırılıb — günəş enerjili soyuducular sayəsində peyvəndlər uzaq kəndlərə belə keyfiyyətini itirmədən çatdırılır.",
-      "Ekspertlər bildirir ki, son beş ildə ilk dəfə olaraq peyvəndsiz uşaqların ümumi sayı ardıcıl olaraq azalır."
-    ],
-    "publishedAt": "2026-08-05",
-    "readingMinutes": 3,
-    "gradient": "from-rose-400 via-orange-300 to-amber-200",
-    "emoji": "💉",
-    "featured": false,
-    "image": "/uploads/peyvend-nisbetleri-dunyada-yukselir-cover.png"
-  },
-  {
-    "slug": "resif-reklord-suretle-berpa-olunur",
-    "category": "dunya",
-    "title": "Bir vaxtlar ağarmış mərcan rifi indi ən sürətli bərpa rekordunu qeydə alıb",
-    "excerpt": "Alimlər isti sululuq epizodundan sonra ağır zərər görmüş bir mərcan rifində indiyədək müşahidə olunan ən sürətli təbii bərpanı qeyd ediblər.",
-    "body": [
-      "Üç il əvvəl istiləşmə dalğası nəticəsində rifin böyük hissəsi ağarmışdı. Tədqiqatçıların gözləntisi onilliklər çəkəcək bərpa idi, lakin son ölçmələr göstərir ki, canlı mərcan örtüyü artıq əvvəlki səviyyənin 80%-inə çatıb.",
-      "Bərpanın sürətlənməsinin səbəbi kimi yerli balıqçılıq qadağalarının sərtləşdirilməsi və rifə düşən çirkab suyunun azaldılması göstərilir.",
-      "Komanda indi eyni metodları regionun digər zərər görmüş sahələrində tətbiq etməyə hazırlaşır."
-    ],
-    "publishedAt": "2026-07-27",
-    "readingMinutes": 2,
-    "gradient": "from-cyan-400 via-teal-300 to-emerald-300",
-    "emoji": "🪸",
-    "featured": false,
-    "image": "/uploads/resif-reklord-suretle-berpa-olunur-cover.png"
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -204,43 +136,6 @@
     "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png"
   },
   {
-    "slug": "10-min-aile-dovletden-kiraye-menzil-alib",
-    "category": "azerbaycan",
-    "title": "Azərbaycanda 10 mindən çox ailə dövlətdən kirayə mənzil əldə edib",
-    "excerpt": "İpoteka və Kredit Zəmanət Fondunun satmaq öhdəliyi ilə kirayə mexanizmi vasitəsilə 10 015 ailənin mənzil şəraiti yaxşılaşıb, bunların 60%-dən çoxu gənc ailələrdir.",
-    "body": [
-      "İpoteka və Kredit Zəmanət Fondunun şəxsi yığımları kifayət etməyən vətəndaşlar üçün tətbiq etdiyi satmaq öhdəliyi ilə kirayə mexanizmi vasitəsilə bu günədək 10 015 ailənin mənzil şəraiti yaxşılaşdırılıb. Bunların 945-i cari ildə imzalanan müqavilələrin payına düşür.",
-      "Mənzil şəraitini yaxşılaşdıran vətəndaşların 60%-dən çoxunu gənclər və gənc ailələr təşkil edir. Mənzillər Bakıda (8 ünvan), Abşeronda (Xırdalan, Masazır, Saray və Məmmədli qəsəbələri — 6 ünvan) və Sumqayıtda (3 ünvan) yerləşən 17 ünvanda təqdim olunub.",
-      "Kompleks məktəb, uşaq bağçası və səhiyyə ocaqlarına yaxın yerləşir, mənzillər müasir tikinti materialları ilə təmir olunub, kombi isitmə sistemi və kommunal sayğaclarla təchiz edilib, mülkiyyət hüquqları isə dövlət qeydiyyatına alınıb."
-    ],
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "gradient": "from-orange-400 via-amber-400 to-yellow-300",
-    "emoji": "🏠",
-    "sourceUrl": "https://baku.ws/social/azerbaycanda-indiye-qeder-10-minden-cox-sexs-dovletden-kirayeye-menzil-goturub",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/10-min-aile-dovletden-kiraye-menzil-alib-cover.png",
-    "featured": false
-  },
-  {
-    "slug": "bu-il-nece-metrostansiya-istifadeye-verilecek",
-    "category": "azerbaycan",
-    "title": "Bu il daha bir metro stansiyası istifadəyə veriləcək",
-    "excerpt": "\"Bakı Metropoliteni\" QSC bildirib ki, 2026-cı ildə B04 layihəli stansiya istismara veriləcək, Dövlət Proqramı çərçivəsində daha 9 stansiya planlaşdırılır.",
-    "body": [
-      "Bakı metro şəbəkəsinin genişləndirilməsi istiqamətində işlər davam edir. \"Bakı Metropoliteni\" QSC-nin açıqlamasına görə, 2026-cı ildə layihə adı B04 olan yeni stansiya istifadəyə veriləcək.",
-      "Dövlət Proqramının icrası çərçivəsində daha 9 stansiyanın da tikilib istismara verilməsi nəzərdə tutulur. Layihələr paytaxtın artan nəqliyyat tələbatının qarşılanmasına və sərnişindaşımanın yaxşılaşdırılmasına yönəlib."
-    ],
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "gradient": "from-slate-600 via-blue-600 to-indigo-700",
-    "emoji": "🚇",
-    "sourceUrl": "https://baku.ws/social/bu-il-nece-metrostansiya-istifadeye-verilecek-resmi-cavab",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/bu-il-nece-metrostansiya-istifadeye-verilecek-cover.png",
-    "featured": false
-  },
-  {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
     "category": "biznes",
     "title": "SOCAR Polymer 7 ayda ixracdan 154 milyon dollardan çox gəlir əldə edib",
@@ -257,108 +152,5 @@
     "sourceName": "Baku.ws",
     "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
     "featured": false
-  },
-  {
-    "slug": "lacinde-isgal-ve-zefer-muzeyi-kompleksi",
-    "title": "Laçında İşğal və Zəfər Muzeyi Kompleksi tikiləcək",
-    "excerpt": "9,9 milyon manatlıq layihə çərçivəsində Laçında yeni mədəni-tarixi kompleks inşa ediləcək; tikintini \"Əsaslı Tikinti və Təchizat\" MMC həyata keçirəcək.",
-    "body": [
-      "\"Laçın İşğal və Zəfər Muzeyi Kompleksi\" Laçın rayonunda inşa ediləcək. Layihənin ehtimal olunan dəyəri 9 milyon 905 min manat müəyyənləşdirilib, tikinti işlərini \"Əsaslı Tikinti və Təchizat\" MMC həyata keçirəcək.",
-      "Kompleksin Laçının işğal dövrünün yaddaşının qorunması və zəfər tarixinin gələcək nəsillərə çatdırılması baxımından mühüm məkanlardan birinə çevrilməsi gözlənilir. Layihə həmçinin şəhərin turizm potensialının artırılmasına töhfə verə bilər."
-    ],
-    "category": "azerbaycan",
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "image": "/uploads/lacinde-isgal-ve-zefer-muzeyi-kompleksi-1788026780152.jpg",
-    "gradient": "from-stone-500 via-amber-600 to-orange-700",
-    "emoji": "🏛️",
-    "featured": false,
-    "sourceName": "Baku.ws"
-  },
-  {
-    "slug": "premyer-liqa-3-tur-teyinatlari",
-    "category": "idman",
-    "title": "Premyer Liqada III turun hakim təyinatları açıqlanıb",
-    "excerpt": "\"Zirə\"-\"Neftçi\" qarşılaşmasını FIFA referisi Elçin Məsiyev idarə edəcək, \"Araz-Naxçıvan\"-\"Sabah\" və \"Sumqayıt\"-\"Qarabağ\" oyunlarının hakimləri də bəlli olub.",
-    "body": [
-      "Azərbaycan Peşəkar Futbol Liqası Misli Premyer Liqasının I dövrə, III turunun hakim təyinatlarını açıqlayıb. \"Zirə\"-\"Neftçi\" oyununu FIFA referisi Elçin Məsiyev idarə edəcək.",
-      "\"Araz-Naxçıvan\"-\"Sabah\" qarşılaşmasında Rəvan Həmzəzadə, \"Sumqayıt\"-\"Qarabağ\" görüşündə isə Fərid Hacıyev fitin sahibi olacaq. Turun oyunları avqustun 29-dan 31-dək müxtəlif stadionlarda keçiriləcək."
-    ],
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "gradient": "from-green-600 via-emerald-600 to-teal-700",
-    "emoji": "⚽",
-    "sourceUrl": "https://baku.ws/sports/premyer-liqa-neftci-sabah-ve-qarabag-in-novbeti-oyunlarinin-teyinatlari-aciqlanib",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/premyer-liqa-3-tur-teyinatlari-cover.png",
-    "featured": false
-  },
-  {
-    "slug": "taekvondo-koreya-sefiri-kubok",
-    "title": "Taekvondo üzrə gənclər arasında \"Koreya Səfiri Kuboku\" keçiriləcək",
-    "excerpt": "Sentyabrın 25-də Fövqəladə Hallar Nazirliyinin İdman-Sağlamlıq Klubunda 2009-2011-ci il təvəllüdlü gənc idmançılar arasında turnir təşkil olunacaq.",
-    "body": [
-      "Azərbaycan Taekvondo Federasiyasının təşkilatçılığı ilə sentyabrın 25-də Fövqəladə Hallar Nazirliyinin İdman-Sağlamlıq Klubunda gənclər arasında \"Koreya Səfiri Kuboku\" turniri keçiriləcək.",
-      "Yarışda ölkənin müxtəlif şəhər və rayonlarını təmsil edən klublardan 2009-2011-ci il təvəllüdlü oğlan və qız idmançılar mübarizə aparacaq. Komandaların son qeydiyyat tarixi 17 sentyabr, saat 15:00-dır."
-    ],
-    "category": "idman",
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "image": "/uploads/taekvondo-koreya-sefiri-kubok-1788027048582.jpg",
-    "gradient": "from-red-500 via-rose-500 to-pink-600",
-    "emoji": "🥋",
-    "featured": false,
-    "sourceName": "Baku.ws"
-  },
-  {
-    "slug": "mirziyoyev-ozbekistan-uculcu-intibah",
-    "title": "Mirziyoyev: Tələbə qızların sayının artması Özbəkistanda \"Üçüncü İntibah\" dövrünün əlamətidir",
-    "excerpt": "Prezident Şavkat Mirziyoyev bildirib ki, ali məktəb tələbələrinin yarıdan çoxu artıq qızlardır; son 10 ildə tələbə sayı 250 mindən 1,6 milyona yüksəlib.",
-    "body": [
-      "Özbəkistan Prezidenti Şavkat Mirziyoyev ölkənin müstəqilliyinin 35 illiyinə həsr olunmuş tədbirdə bildirib ki, ali məktəb tələbələrinin yarıdan çoxunu bu gün qızlar və qadınlar təşkil edir — bunu \"Üçüncü İntibah\" dövrünün əlaməti adlandırıb.",
-      "Onun sözlərinə görə, son 10 ildə məktəbəqədər təhsilin əhatə dairəsi 27%-dən 78%-ə yüksəlib, ali məktəb tələbələrinin sayı isə 250 mindən 1,6 milyona çatıb. \"Valideynlər üçün övladlarının ali təhsil alması artıq uzaq xəyal deyil, reallıqdır\", — deyə Mirziyoyev vurğulayıb.",
-      "Prezident əlavə edib ki, informasiya texnologiyaları, süni intellekt və kreativ iqtisadiyyat sahələrinin inkişafı ilə 10 milyon gəncin rəqəmsal sənayeyə cəlb olunması hədəflənir."
-    ],
-    "category": "dunya",
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 3,
-    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-1788027009981.jpg",
-    "gradient": "from-sky-500 via-blue-500 to-cyan-600",
-    "emoji": "🎓",
-    "featured": false,
-    "sourceName": "Baku.ws"
-  },
-  {
-    "slug": "pomidor-doyusu-festivali-la-tomatina",
-    "title": "İspaniyada \"La Tomatina\" pomidor döyüşü festivalı 79-cu dəfə keçirildi",
-    "excerpt": "Bunyol şəhərində minlərlə insanın iştirak etdiyi ənənəvi festivalda bir saat ərzində 165 tondan çox yetişmiş pomidor atılıb, iştirakçıların 40%-i xarici ölkələrdən gəlib.",
-    "body": [
-      "İspaniyanın Bunyol şəhərində məşhur \"La Tomatina\" pomidor döyüşü festivalı 79-cu dəfə keçirilib. Avqustun son çərşənbə günü baş tutan tədbirdə bir saatdan çox müddətdə 165 tondan çox yetişmiş pomidor ətrafa atılıb.",
-      "Bu il festivalda 20 000-dən çox insanın iştirak etməsi gözlənilirdi, iştirakçıların təxminən 40%-i İspaniya xaricindən gəlib. Festivalın tarixi 1945-ci ilə, kiçik bir parad zamanı baş verən zarafatyana davaya gedib çıxır və illər ərzində şəhərin ən məşhur ənənəsinə çevrilib."
-    ],
-    "category": "dunya",
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 2,
-    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-1788026948041.webp",
-    "gradient": "from-red-500 via-orange-500 to-rose-600",
-    "emoji": "🍅",
-    "featured": true,
-    "sourceName": "Baku.ws"
-  },
-  {
-    "slug": "media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi",
-    "title": "MEDİA qanunsuz fəaliyyət göstərən xəbər saytı barədə bəyanat yaydı",
-    "excerpt": "MEDİA qanunsuz əsaslarla fəaliyyət göstərdiyi bildirilən xəbər saytı ilə bağlı ictimaiyyətə rəsmi bəyanat ünvanlayıb. Quruma görə, həmin resurs mövcud qanunvericiliyin tələblərini pozur və media subyekti kimi qeydiyyatdan keçməyib.",
-    "body": [
-      "Medianın İnkişafı Agentliyi (MEDİA) Azərbaycanda qanunsuz fəaliyyət göstərdiyi iddia olunan xəbər saytı barədə rəsmi bəyanat yayıb. Qurum bildirir ki, həmin onlayn resurs media subyekti kimi dövlət qeydiyyatına alınmayıb və mövcud qanunvericiliyin tələblərinə əməl etmir.",
-      "Bəyanatda qeyd olunur ki, belə saytlar peşəkar standartlara riayət etmədən, məsuliyyətsiz informasiya yaymaqla ictimai rəyə mənfi təsir göstərir. MEDİA agentliyi vətəndaşlara yalnız qeydiyyatdan keçmiş, hüquqi statusu və məsuliyyət daşıyan media platformalarının məlumatlarına istinad etməyi tövsiyə edib.",
-      "Qurum həmçinin vurğulayıb ki, media sahəsində şəffaflıq və məsuliyyətin təmin olunması üçün qanunsuz fəaliyyət göstərən saytlarla bağlı müvafiq dövlət qurumları ilə birgə tədbirlər davam etdiriləcək. MEDİA bu cür hallarla rastlaşan şəxsləri rəsmi qurumlara məlumat verməyə çağırıb."
-    ],
-    "category": "azerbaycan",
-    "publishedAt": "2026-08-29",
-    "readingMinutes": 2,
-    "image": "/uploads/media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi-1788026568153.jpg",
-    "featured": false,
-    "sourceName": "Baku.ws"
   }
 ]

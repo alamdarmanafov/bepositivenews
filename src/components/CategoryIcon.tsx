@@ -11,37 +11,6 @@ const commonProps = {
   strokeLinejoin: "round" as const,
 };
 
-function AzerbaycanIcon({ className }: IconProps) {
-  return (
-    <svg {...commonProps} className={className}>
-      <path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z" />
-      <circle cx="12" cy="9" r="2.4" />
-    </svg>
-  );
-}
-
-function DunyaIcon({ className }: IconProps) {
-  return (
-    <svg {...commonProps} className={className}>
-      <circle cx="12" cy="12" r="9" />
-      <ellipse cx="12" cy="12" rx="4" ry="9" />
-      <path d="M3.3 9h17.4M3.3 15h17.4" />
-    </svg>
-  );
-}
-
-function IdmanIcon({ className }: IconProps) {
-  return (
-    <svg {...commonProps} className={className}>
-      <path d="M7 4h10v3.5a5 5 0 01-5 5 5 5 0 01-5-5V4z" />
-      <path d="M7 5.5H4.8a2 2 0 000 4H7M17 5.5h2.2a2 2 0 010 4H17" />
-      <path d="M12 12.5V16" />
-      <path d="M8.5 19.5l1-3h5l1 3" />
-      <path d="M8 19.5h8" />
-    </svg>
-  );
-}
-
 function BiznesIcon({ className }: IconProps) {
   return (
     <svg {...commonProps} className={className}>
@@ -92,9 +61,6 @@ function MarketinqIcon({ className }: IconProps) {
 }
 
 const ICONS: Record<CategoryKey, (props: IconProps) => React.JSX.Element> = {
-  azerbaycan: AzerbaycanIcon,
-  dunya: DunyaIcon,
-  idman: IdmanIcon,
   biznes: BiznesIcon,
   texnologiya: TexnologiyaIcon,
   ai: AiIcon,

@@ -1,12 +1,4 @@
-export type CategoryKey =
-  | "azerbaycan"
-  | "dunya"
-  | "idman"
-  | "biznes"
-  | "texnologiya"
-  | "ai"
-  | "sosial-media"
-  | "marketinq";
+export type CategoryKey = "biznes" | "texnologiya" | "ai" | "sosial-media" | "marketinq";
 
 export type Article = {
   slug: string;
@@ -28,9 +20,6 @@ export type Article = {
 };
 
 export const CATEGORY_LABELS: Record<CategoryKey, string> = {
-  azerbaycan: "Azərbaycan",
-  dunya: "Dünya",
-  idman: "İdman",
   biznes: "Biznes",
   texnologiya: "Texnologiya",
   ai: "AI",
@@ -38,13 +27,4 @@ export const CATEGORY_LABELS: Record<CategoryKey, string> = {
   marketinq: "Marketinq",
 };
 
-export const CATEGORY_ORDER: CategoryKey[] = [
-  "azerbaycan",
-  "dunya",
-  "idman",
-  "biznes",
-  "texnologiya",
-  "ai",
-  "sosial-media",
-  "marketinq",
-];
+export const CATEGORY_ORDER: CategoryKey[] = ["texnologiya", "ai", "marketinq", "biznes", "sosial-media"];
