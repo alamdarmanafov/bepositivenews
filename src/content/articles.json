@@ -68,23 +68,6 @@
     "featured": true
   },
   {
-    "slug": "dronla-mese-eken-layihe",
-    "category": "texnologiya",
-    "title": "Dronla toxum səpən meşəbərpa layihələri əl ilə əkindən daha sürətli nəticə verir",
-    "excerpt": "Yanğından zərər görmüş sahələrdə sınaqdan keçirilən dron toxum səpini bir gündə yüzlərlə hektarı əhatə edərək bərpa müddətini qısaldıb.",
-    "body": [
-      "Dronlar əvvəlcədən torpaq analizinə əsaslanaraq toxumları ən uyğun nöqtələrə səpir, bu da cücərmə faizini əl ilə əkindən yüksək saxlayır. Hər dron bir işçinin gündə əkə biləcəyi sahəni bir neçə dəqiqədə əhatə edir.",
-      "Pilot layihədə əkilən sahələrin 70%-dən çoxunda ilk il ərzində sağlam cücərmə müşahidə olunub — bu, ənənəvi əkin üsullarının nəticələrini üstələyir.",
-      "Layihə komandası texnologiyanı indi yanğından zərər çəkmiş digər regionlara da tətbiq etməyə hazırlaşır."
-    ],
-    "publishedAt": "2026-07-10",
-    "readingMinutes": 3,
-    "gradient": "from-emerald-400 via-teal-400 to-cyan-500",
-    "emoji": "🌱",
-    "featured": false,
-    "image": "/uploads/dronla-mese-eken-layihe-cover.png"
-  },
-  {
     "slug": "insulin-yamasi-kesfi",
     "category": "texnologiya",
     "title": "Bir sikkə ölçüsündə yama gündəlik insulin iynələrini əvəz edə bilər",
