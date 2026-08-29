@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -48,7 +48,7 @@
     "image": "/uploads/kicik-sahibkar-destek-fondu-1788027495549.jpg",
     "gradient": "from-emerald-500 via-green-500 to-teal-600",
     "emoji": "💼",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
