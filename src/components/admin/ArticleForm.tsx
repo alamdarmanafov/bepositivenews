@@ -47,13 +47,14 @@ export default function ArticleForm(props: Props) {
   const [uploadingImage, setUploadingImage] = useState(false);
   const [error, setError] = useState("");
 
+  const [aiSourceUrl, setAiSourceUrl] = useState("");
   const [aiSourceText, setAiSourceText] = useState("");
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState("");
 
   async function handleAiDraft() {
-    if (!aiSourceText.trim()) {
-      setAiError("Mənbə mətnini yapışdırın.");
+    if (!aiSourceUrl.trim() && !aiSourceText.trim()) {
+      setAiError("Link və ya mənbə mətnini daxil edin.");
       return;
     }
     setAiLoading(true);
@@ -62,7 +63,7 @@ export default function ArticleForm(props: Props) {
     const res = await fetch("/api/admin/ai-draft", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ sourceText: aiSourceText }),
+      body: JSON.stringify({ sourceUrl: aiSourceUrl, sourceText: aiSourceText }),
     });
 
     setAiLoading(false);
@@ -79,6 +80,8 @@ export default function ArticleForm(props: Props) {
       body: string[];
       category: CategoryKey;
       readingMinutes: number;
+      sourceUrl?: string;
+      sourceName?: string;
     };
 
     handleTitleChange(draft.title);
@@ -86,6 +89,8 @@ export default function ArticleForm(props: Props) {
     setBody(draft.body.join("\n\n"));
     setCategory(draft.category);
     setReadingMinutes(draft.readingMinutes);
+    if (draft.sourceUrl) setSourceUrl(draft.sourceUrl);
+    if (draft.sourceName) setSourceName(draft.sourceName);
   }
 
   function handleTitleChange(value: string) {
@@ -214,9 +219,18 @@ export default function ArticleForm(props: Props) {
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
       {props.mode === "create" && (
         <div className="flex flex-col gap-2 rounded-2xl border border-dashed border-primary/40 bg-primary/5 p-4">
-          <label htmlFor="aiSourceText" className={labelClass}>
-            AI ilə yaz — mənbə mətnini yapışdırın
+          <label htmlFor="aiSourceUrl" className={labelClass}>
+            AI ilə yaz — xəbər linki və ya mətn
           </label>
+          <input
+            id="aiSourceUrl"
+            type="url"
+            value={aiSourceUrl}
+            onChange={(event) => setAiSourceUrl(event.target.value)}
+            placeholder="https://... (xəbər saytının linki)"
+            className={inputClass}
+          />
+          <p className="text-center text-xs text-foreground/40">— və ya —</p>
           <textarea
             id="aiSourceText"
             rows={5}
@@ -235,7 +249,8 @@ export default function ArticleForm(props: Props) {
             {aiLoading ? "Yazılır…" : "AI ilə xəbər yaz"}
           </button>
           <p className="text-xs text-foreground/50">
-            Aşağıdakı sahələr avtomatik dolacaq — dərc etməzdən əvvəl mütləq oxuyub yoxlayın.
+            Link versən, AI səhifəni açıb ən aktual xəbəri özü seçəcək. Aşağıdakı sahələr avtomatik
+            dolacaq — dərc etməzdən əvvəl mütləq oxuyub yoxlayın.
           </p>
         </div>
       )}
