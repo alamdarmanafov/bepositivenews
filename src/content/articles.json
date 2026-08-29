@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -219,7 +219,8 @@
     "emoji": "🏠",
     "sourceUrl": "https://baku.ws/social/azerbaycanda-indiye-qeder-10-minden-cox-sexs-dovletden-kirayeye-menzil-goturub",
     "sourceName": "Baku.ws",
-    "image": "/uploads/10-min-aile-dovletden-kiraye-menzil-alib-cover.png"
+    "image": "/uploads/10-min-aile-dovletden-kiraye-menzil-alib-cover.png",
+    "featured": false
   },
   {
     "slug": "bu-il-nece-metrostansiya-istifadeye-verilecek",
@@ -236,7 +237,8 @@
     "emoji": "🚇",
     "sourceUrl": "https://baku.ws/social/bu-il-nece-metrostansiya-istifadeye-verilecek-resmi-cavab",
     "sourceName": "Baku.ws",
-    "image": "/uploads/bu-il-nece-metrostansiya-istifadeye-verilecek-cover.png"
+    "image": "/uploads/bu-il-nece-metrostansiya-istifadeye-verilecek-cover.png",
+    "featured": false
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
@@ -253,7 +255,8 @@
     "emoji": "🏭",
     "sourceUrl": "https://baku.ws/economy/socar-polymer-7-ayda-ixracdan-154-milyon-dollardan-cox-gelir-elde-edib",
     "sourceName": "Baku.ws",
-    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png"
+    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
+    "featured": false
   },
   {
     "slug": "lacinde-isgal-ve-zefer-muzeyi-kompleksi",
@@ -270,7 +273,8 @@
     "emoji": "🏛️",
     "sourceUrl": "https://baku.ws/social/lacinda-isgal-ve-zefer-muzeyi-kompleksi-tikilecek-9-9-milyonluq-layihe",
     "sourceName": "Baku.ws",
-    "image": "/uploads/lacinde-isgal-ve-zefer-muzeyi-kompleksi-cover.png"
+    "image": "/uploads/lacinde-isgal-ve-zefer-muzeyi-kompleksi-cover.png",
+    "featured": false
   },
   {
     "slug": "premyer-liqa-3-tur-teyinatlari",
@@ -287,7 +291,8 @@
     "emoji": "⚽",
     "sourceUrl": "https://baku.ws/sports/premyer-liqa-neftci-sabah-ve-qarabag-in-novbeti-oyunlarinin-teyinatlari-aciqlanib",
     "sourceName": "Baku.ws",
-    "image": "/uploads/premyer-liqa-3-tur-teyinatlari-cover.png"
+    "image": "/uploads/premyer-liqa-3-tur-teyinatlari-cover.png",
+    "featured": false
   },
   {
     "slug": "taekvondo-koreya-sefiri-kubok",
@@ -304,7 +309,8 @@
     "emoji": "🥋",
     "sourceUrl": "https://baku.ws/sports/taekvondo-uzre-gencler-arasinda-koreya-sefiri-kuboku-kecirilecek",
     "sourceName": "Baku.ws",
-    "image": "/uploads/taekvondo-koreya-sefiri-kubok-cover.png"
+    "image": "/uploads/taekvondo-koreya-sefiri-kubok-cover.png",
+    "featured": false
   },
   {
     "slug": "mirziyoyev-ozbekistan-uculcu-intibah",
@@ -322,7 +328,8 @@
     "emoji": "🎓",
     "sourceUrl": "https://baku.ws/dunya/mirziyoyev-telebe-qizlarin-sayinin-artmasi-ozbekistanda-ucuncu-intibah-dovrunun-elametidir",
     "sourceName": "Baku.ws",
-    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-cover.png"
+    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-cover.png",
+    "featured": false
   },
   {
     "slug": "pomidor-doyusu-festivali-la-tomatina",
@@ -339,6 +346,23 @@
     "emoji": "🍅",
     "sourceUrl": "https://baku.ws/dunya/pomidor-doyusu-festivalindan-rengareng-goruntuler",
     "sourceName": "Baku.ws",
-    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-cover.png"
+    "image": "/uploads/pomidor-doyusu-festivali-la-tomatina-cover.png",
+    "featured": false
+  },
+  {
+    "slug": "media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi",
+    "title": "MEDİA qanunsuz fəaliyyət göstərən xəbər saytı barədə bəyanat yaydı",
+    "excerpt": "MEDİA qanunsuz əsaslarla fəaliyyət göstərdiyi bildirilən xəbər saytı ilə bağlı ictimaiyyətə rəsmi bəyanat ünvanlayıb. Quruma görə, həmin resurs mövcud qanunvericiliyin tələblərini pozur və media subyekti kimi qeydiyyatdan keçməyib.",
+    "body": [
+      "Medianın İnkişafı Agentliyi (MEDİA) Azərbaycanda qanunsuz fəaliyyət göstərdiyi iddia olunan xəbər saytı barədə rəsmi bəyanat yayıb. Qurum bildirir ki, həmin onlayn resurs media subyekti kimi dövlət qeydiyyatına alınmayıb və mövcud qanunvericiliyin tələblərinə əməl etmir.",
+      "Bəyanatda qeyd olunur ki, belə saytlar peşəkar standartlara riayət etmədən, məsuliyyətsiz informasiya yaymaqla ictimai rəyə mənfi təsir göstərir. MEDİA agentliyi vətəndaşlara yalnız qeydiyyatdan keçmiş, hüquqi statusu və məsuliyyət daşıyan media platformalarının məlumatlarına istinad etməyi tövsiyə edib.",
+      "Qurum həmçinin vurğulayıb ki, media sahəsində şəffaflıq və məsuliyyətin təmin olunması üçün qanunsuz fəaliyyət göstərən saytlarla bağlı müvafiq dövlət qurumları ilə birgə tədbirlər davam etdiriləcək. MEDİA bu cür hallarla rastlaşan şəxsləri rəsmi qurumlara məlumat verməyə çağırıb."
+    ],
+    "category": "azerbaycan",
+    "publishedAt": "2026-08-29",
+    "readingMinutes": 2,
+    "image": "/uploads/media-qanunsuz-fealiyyet-gosteren-xeber-sayti-barede-beyanat-yaydi-1788026568153.jpg",
+    "featured": true,
+    "sourceName": "Baku.ws"
   }
 ]
