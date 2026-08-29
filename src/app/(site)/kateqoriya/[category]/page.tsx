@@ -4,6 +4,7 @@ import Container from "@/components/Container";
 import ArticleCard from "@/components/ArticleCard";
 import { getArticlesByCategory } from "@/content/articles";
 import { CATEGORY_LABELS, CategoryKey } from "@/content/types";
+import { SITE_KEYWORDS } from "@/lib/site";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: label,
     description,
+    keywords: [label, `${label} xəbərləri`, `${label} son xəbərlər`, ...SITE_KEYWORDS],
     alternates: {
       canonical: `/kateqoriya/${category}`,
     },

@@ -8,12 +8,19 @@ import CategoryBadge from "@/components/CategoryBadge";
 import { articles, getArticleBySlug, getArticlesByCategory } from "@/content/articles";
 import { CATEGORY_LABELS } from "@/content/types";
 import { formatDateAz } from "@/lib/format";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
+}
+
+function titleKeywords(title: string): string[] {
+  const words = title
+    .split(/[^\p{L}\p{N}]+/u)
+    .filter((word) => word.length > 3);
+  return Array.from(new Set(words)).slice(0, 6);
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -23,6 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.excerpt,
+    keywords: [
+      article.title,
+      CATEGORY_LABELS[article.category],
+      ...titleKeywords(article.title),
+      ...SITE_KEYWORDS,
+    ],
     alternates: {
       canonical: `/meqale/${article.slug}`,
     },
