@@ -129,6 +129,23 @@
     "publishedAt": "2026-08-29",
     "readingMinutes": 3,
     "image": "/uploads/apple-in-1984-reklami-60-saniyeye-deyisen-reklam-tarixi-1788030825743.jpg",
+    "featured": false,
+    "sourceName": "Marklife.az"
+  },
+  {
+    "slug": "amazon-catdirilma-merkezlerini-tam-robotlasdirmaga-hazirlasir",
+    "title": "Amazon çatdırılma mərkəzlərini tam robotlaşdırmağa hazırlaşır",
+    "excerpt": "Amazon “Project Tetromino” adlı yeni layihə ilə bağlamaların çeşidlənməsi və avtomobillərə yüklənməsi prosesini robotlara həvalə etməyi, emal sürətini isə 2,5 dəfə artırmağı planlaşdırır. Layihə üçün 2029-cu ilə qədər ümumi sərmayənin 530 milyon dolları keçə biləcəyi gözlənilir.",
+    "body": [
+      "Amazon sifarişlərin müştəriyə çatdırılmasından əvvəlki son mərhələni də avtomatlaşdırmaq üçün “Project Tetromino” adlı yeni layihə üzərində işləyir. Daxili planlaşdırma sənədlərinə əsasən, süni intellekt və robotlardan istifadə edən bu çatdırılma mərkəzlərində bağlamaların emal sürəti mövcud məntəqələrlə müqayisədə 2,5 dəfəyə qədər arta bilər.",
+      "Layihənin əsas hədəfi hazırda böyük ölçüdə insan əməyindən asılı olan mərhələləri – bağlamaların çeşidlənməsi, qruplaşdırılması və çatdırılma avtomobillərinə yerləşdirilməsini – maksimum dərəcədə robotlaşdırmaqdır. Amazon 2028-ci ildə layihə üçün 103 milyon dollarlıq pilot investisiya nəzərdən keçirir, 2029-cu ildə 5, 2030-cu ildə isə əlavə 10 mərkəzin istifadəyə verilməsi planlaşdırılır. Proqnozlara görə, 2029-cu ilə qədər layihəyə yatırılan ümumi sərmayə 530 milyon dolları aşa bilər.",
+      "Amazon son illərdə logistika şəbəkəsində robotların payını sürətlə artırır və hazırda müxtəlif anbar və çeşidləmə əməliyyatlarında 1 milyondan çox robotdan istifadə olunduğunu bildirir. Şirkət Proteus kimi yeni nəsil robotlarla əməkdaşların fiziki cəhətdən ağır və təkrarlanan işlərini azaltmağı, təhlükəsizlik və səmərəliliyi yüksəltməyi hədəfləyir.",
+      "Bununla belə, Amazon “Project Tetromino”nun hələ ilkin mərhələdə olduğunu, daxili sənədlərdə yer alan rəqəm və tarixlərin isə yekun investisiya qərarını əks etdirmədiyini vurğulayır. Eyni zamanda, FedEx, UPS və DHL kimi digər iri logistika şirkətlərinin də oxşar robot həllərinə sərmayə qoyması göstərir ki, sektor artıq rəqabəti yalnız çatdırılma sürəti ilə deyil, həm də proseslərin tam avtomatlaşdırılması və minimal insan müdaxiləsi ilə aparır."
+    ],
+    "category": "ai",
+    "publishedAt": "2026-08-29",
+    "readingMinutes": 3,
+    "image": "/uploads/amazon-catdirilma-merkezlerini-tam-robotlasdirmaga-hazirlasir-1788030947319.jpg",
     "featured": true,
     "sourceName": "Marklife.az"
   }
