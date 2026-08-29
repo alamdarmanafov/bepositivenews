@@ -52,7 +52,6 @@
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
-    "category": "biznes",
     "title": "Elektrikli avtomobil batareyalarının ucuz təkrar emalı yeni bazar yaradır",
     "excerpt": "Tədqiqatçıların hazırladığı yeni kimyəvi proses batareya tullantılarından litium və kobaltı əvvəlki üsullardan qat-qat ucuz qiymətə ayırmağa imkan verir.",
     "body": [
@@ -60,12 +59,13 @@
       "İlkin sənaye sınaqlarında geri qazanılan materialların keyfiyyəti yeni batareya istehsalı üçün yararlı səviyyədə olub — bu da sahədə yeni iş yerləri və investisiya imkanları yaradıb.",
       "Şirkət bu ilin sonuna qədər kommersiya miqyasında ilk zavodu işə salmağı planlaşdırır."
     ],
+    "category": "biznes",
     "publishedAt": "2026-07-18",
     "readingMinutes": 3,
+    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png",
     "gradient": "from-slate-500 via-sky-500 to-blue-600",
     "emoji": "🔋",
-    "featured": false,
-    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png"
+    "featured": true
   },
   {
     "slug": "dronla-mese-eken-layihe",
@@ -133,7 +133,7 @@
     "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png",
     "gradient": "from-yellow-400 via-amber-400 to-orange-400",
     "emoji": "📣",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
