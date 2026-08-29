@@ -313,7 +313,6 @@
   },
   {
     "slug": "mirziyoyev-ozbekistan-uculcu-intibah",
-    "category": "dunya",
     "title": "Mirziyoyev: Tələbə qızların sayının artması Özbəkistanda \"Üçüncü İntibah\" dövrünün əlamətidir",
     "excerpt": "Prezident Şavkat Mirziyoyev bildirib ki, ali məktəb tələbələrinin yarıdan çoxu artıq qızlardır; son 10 ildə tələbə sayı 250 mindən 1,6 milyona yüksəlib.",
     "body": [
@@ -321,14 +320,14 @@
       "Onun sözlərinə görə, son 10 ildə məktəbəqədər təhsilin əhatə dairəsi 27%-dən 78%-ə yüksəlib, ali məktəb tələbələrinin sayı isə 250 mindən 1,6 milyona çatıb. \"Valideynlər üçün övladlarının ali təhsil alması artıq uzaq xəyal deyil, reallıqdır\", — deyə Mirziyoyev vurğulayıb.",
       "Prezident əlavə edib ki, informasiya texnologiyaları, süni intellekt və kreativ iqtisadiyyat sahələrinin inkişafı ilə 10 milyon gəncin rəqəmsal sənayeyə cəlb olunması hədəflənir."
     ],
+    "category": "dunya",
     "publishedAt": "2026-08-28",
     "readingMinutes": 3,
+    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-1788027009981.jpg",
     "gradient": "from-sky-500 via-blue-500 to-cyan-600",
     "emoji": "🎓",
-    "sourceUrl": "https://baku.ws/dunya/mirziyoyev-telebe-qizlarin-sayinin-artmasi-ozbekistanda-ucuncu-intibah-dovrunun-elametidir",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/mirziyoyev-ozbekistan-uculcu-intibah-cover.png",
-    "featured": false
+    "featured": false,
+    "sourceName": "Baku.ws"
   },
   {
     "slug": "pomidor-doyusu-festivali-la-tomatina",
