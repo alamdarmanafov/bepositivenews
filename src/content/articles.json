@@ -48,7 +48,7 @@
     "image": "/uploads/kicik-sahibkar-destek-fondu-1788027495549.jpg",
     "gradient": "from-emerald-500 via-green-500 to-teal-600",
     "emoji": "💼",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
@@ -103,7 +103,6 @@
   },
   {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
-    "category": "sosial-media",
     "title": "Sosial media kampaniyası bir həftədə 200 itkin heyvanın sahibini tapdı",
     "excerpt": "Yerli icma qrupları tərəfindən başladılan paylaşım zənciri könüllülərin köməyi ilə yüzlərlə itkin heyvanı sahiblərinə qovuşdurub.",
     "body": [
@@ -111,12 +110,13 @@
       "Könüllülər indi prosesi asanlaşdırmaq üçün ortaq bir məlumat lövhəsi yaradıblar ki, sahiblər öz heyvanlarını daha tez tapa bilsinlər.",
       "Təşəbbüsün uğuru digər şəhərlərdə də oxşar könüllü şəbəkələrin yaranmasına təkan verib."
     ],
+    "category": "sosial-media",
     "publishedAt": "2026-08-02",
     "readingMinutes": 2,
+    "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png",
     "gradient": "from-pink-400 via-fuchsia-400 to-purple-500",
     "emoji": "🐾",
-    "featured": false,
-    "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png"
+    "featured": true
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
