@@ -18,7 +18,6 @@
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
-    "category": "ai",
     "title": "Süni intellekt modeli enerji şəbəkələrində itkiləri 15% azaltdı",
     "excerpt": "Real vaxt rejimində yükü proqnozlaşdıran alqoritm elektrik şəbəkəsində itkiləri azaldaraq daha sabit enerji təchizatı təmin edir.",
     "body": [
@@ -26,12 +25,13 @@
       "Pilot bölgədə tətbiqdən sonra ötürücü xətlərdəki itkilər nəzərəçarpacaq dərəcədə azalıb, bu da həm xərcləri, həm də karbon izini aşağı salıb.",
       "Enerji şirkəti texnologiyanı növbəti il daha geniş şəbəkəyə tətbiq etməyi planlaşdırır."
     ],
+    "category": "ai",
     "publishedAt": "2026-07-30",
     "readingMinutes": 2,
+    "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png",
     "gradient": "from-sky-500 via-blue-500 to-indigo-600",
     "emoji": "⚡",
-    "featured": false,
-    "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png"
+    "featured": false
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -52,7 +52,6 @@
   },
   {
     "slug": "batareya-tekrar-emali-yeni-bazar",
-    "category": "biznes",
     "title": "Elektrikli avtomobil batareyalarının ucuz təkrar emalı yeni bazar yaradır",
     "excerpt": "Tədqiqatçıların hazırladığı yeni kimyəvi proses batareya tullantılarından litium və kobaltı əvvəlki üsullardan qat-qat ucuz qiymətə ayırmağa imkan verir.",
     "body": [
@@ -60,50 +59,16 @@
       "İlkin sənaye sınaqlarında geri qazanılan materialların keyfiyyəti yeni batareya istehsalı üçün yararlı səviyyədə olub — bu da sahədə yeni iş yerləri və investisiya imkanları yaradıb.",
       "Şirkət bu ilin sonuna qədər kommersiya miqyasında ilk zavodu işə salmağı planlaşdırır."
     ],
+    "category": "biznes",
     "publishedAt": "2026-07-18",
     "readingMinutes": 3,
+    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png",
     "gradient": "from-slate-500 via-sky-500 to-blue-600",
     "emoji": "🔋",
-    "featured": false,
-    "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png"
-  },
-  {
-    "slug": "dronla-mese-eken-layihe",
-    "category": "texnologiya",
-    "title": "Dronla toxum səpən meşəbərpa layihələri əl ilə əkindən daha sürətli nəticə verir",
-    "excerpt": "Yanğından zərər görmüş sahələrdə sınaqdan keçirilən dron toxum səpini bir gündə yüzlərlə hektarı əhatə edərək bərpa müddətini qısaldıb.",
-    "body": [
-      "Dronlar əvvəlcədən torpaq analizinə əsaslanaraq toxumları ən uyğun nöqtələrə səpir, bu da cücərmə faizini əl ilə əkindən yüksək saxlayır. Hər dron bir işçinin gündə əkə biləcəyi sahəni bir neçə dəqiqədə əhatə edir.",
-      "Pilot layihədə əkilən sahələrin 70%-dən çoxunda ilk il ərzində sağlam cücərmə müşahidə olunub — bu, ənənəvi əkin üsullarının nəticələrini üstələyir.",
-      "Layihə komandası texnologiyanı indi yanğından zərər çəkmiş digər regionlara da tətbiq etməyə hazırlaşır."
-    ],
-    "publishedAt": "2026-07-10",
-    "readingMinutes": 3,
-    "gradient": "from-emerald-400 via-teal-400 to-cyan-500",
-    "emoji": "🌱",
-    "featured": false,
-    "image": "/uploads/dronla-mese-eken-layihe-cover.png"
-  },
-  {
-    "slug": "insulin-yamasi-kesfi",
-    "category": "texnologiya",
-    "title": "Bir sikkə ölçüsündə yama gündəlik insulin iynələrini əvəz edə bilər",
-    "excerpt": "Klinik sınaqlarda uğur qazanan yeni yapışqan yama qan şəkərinə uyğun olaraq insulini avtomatik buraxır və gündəlik iynə ehtiyacını aradan qaldırır.",
-    "body": [
-      "Yamanın daxilindəki mikro iynələr dəri altına ağrısız şəkildə nüfuz edir və qanda şəkər səviyyəsi yüksəldikdə insulini avtomatik sərbəst buraxır. Bu, xüsusilə uşaqlar üçün gündəlik iynə stresini aradan qaldırır.",
-      "İlkin sınaqlarda iştirakçıların əksəriyyəti yamanı adi iynədən daha rahat və etibarlı hesab edib. Qan şəkəri nəzarəti isə ənənəvi üsulla müqayisədə eyni səviyyədə qalıb.",
-      "Geniş miqyaslı sınaqlar davam edir və tədqiqatçılar məhsulun bir neçə il ərzində əczaxanalarda satışa çıxmasını gözləyirlər."
-    ],
-    "publishedAt": "2026-06-28",
-    "readingMinutes": 3,
-    "gradient": "from-violet-500 via-purple-500 to-indigo-600",
-    "emoji": "🩹",
-    "featured": false,
-    "image": "/uploads/insulin-yamasi-kesfi-cover.png"
+    "featured": false
   },
   {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
-    "category": "sosial-media",
     "title": "Sosial media kampaniyası bir həftədə 200 itkin heyvanın sahibini tapdı",
     "excerpt": "Yerli icma qrupları tərəfindən başladılan paylaşım zənciri könüllülərin köməyi ilə yüzlərlə itkin heyvanı sahiblərinə qovuşdurub.",
     "body": [
@@ -111,16 +76,16 @@
       "Könüllülər indi prosesi asanlaşdırmaq üçün ortaq bir məlumat lövhəsi yaradıblar ki, sahiblər öz heyvanlarını daha tez tapa bilsinlər.",
       "Təşəbbüsün uğuru digər şəhərlərdə də oxşar könüllü şəbəkələrin yaranmasına təkan verib."
     ],
+    "category": "sosial-media",
     "publishedAt": "2026-08-02",
     "readingMinutes": 2,
+    "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png",
     "gradient": "from-pink-400 via-fuchsia-400 to-purple-500",
     "emoji": "🐾",
-    "featured": false,
-    "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png"
+    "featured": false
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
-    "category": "marketinq",
     "title": "Uğurlu marketinq kampaniyaları bu il xeyriyyəçiliyə rekord məbləğ yönəltdi",
     "excerpt": "Brendlərin satışlarının bir hissəsini birbaşa sosial layihələrə yönləndirən kampaniyalar həm satışları artırıb, həm də icmalara real dəstək olub.",
     "body": [
@@ -128,29 +93,30 @@
       "Marketoloqlar bildirir ki, şəffaflıq açarıdır — istehlakçılar vəsaitin harada xərcləndiyini dəqiq görmək istəyir və bu, kampaniyaların uğurunu artırır.",
       "Trendin davam edəcəyi gözlənilir, çünki gənc auditoriya sosial təsiri brend seçimində əsas amillərdən biri hesab edir."
     ],
+    "category": "marketinq",
     "publishedAt": "2026-07-22",
     "readingMinutes": 2,
+    "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png",
     "gradient": "from-yellow-400 via-amber-400 to-orange-400",
     "emoji": "📣",
-    "featured": false,
-    "image": "/uploads/xeyriyyeci-marketinq-kampaniyalari-cover.png"
+    "featured": false
   },
   {
     "slug": "socar-polymer-ixracdan-154-milyon-dollar-gelir",
-    "category": "biznes",
     "title": "SOCAR Polymer 7 ayda ixracdan 154 milyon dollardan çox gəlir əldə edib",
     "excerpt": "Şirkət 2026-cı ilin yanvar-iyul aylarında 154,4 milyon dollarlıq məhsul ixrac edib; ölkənin qeyri-neft-qaz ixracı isə 18,3% artaraq 2,5 milyard dollara çatıb.",
     "body": [
       "SOCAR-ın 57%-lik törəməsi olan \"SOCAR Polymer\" MMC bu ilin ilk yeddi ayında 154,4 milyon ABŞ dolları dəyərində məhsul ixrac edib. Məlumat İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzinin \"İxrac İcmalı\"nda yer alıb.",
       "Göstərici keçən ilin eyni dövrü ilə müqayisədə 2,2% (3,5 milyon dollar) aşağı olsa da, ölkə üzrə ümumi mənzərə müsbətdir: yanvar-iyul aylarında Azərbaycanın qeyri-neft-qaz sektoru üzrə ixracı 18,3% artaraq 2,5 milyard dollara çatıb."
     ],
+    "category": "biznes",
     "publishedAt": "2026-08-28",
     "readingMinutes": 2,
+    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
     "gradient": "from-teal-500 via-emerald-500 to-green-600",
     "emoji": "🏭",
+    "featured": false,
     "sourceUrl": "https://baku.ws/economy/socar-polymer-7-ayda-ixracdan-154-milyon-dollardan-cox-gelir-elde-edib",
-    "sourceName": "Baku.ws",
-    "image": "/uploads/socar-polymer-ixracdan-154-milyon-dollar-gelir-cover.png",
-    "featured": false
+    "sourceName": "Baku.ws"
   }
 ]
