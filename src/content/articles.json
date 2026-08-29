@@ -163,7 +163,7 @@
     "publishedAt": "2026-08-29",
     "readingMinutes": 3,
     "image": "/uploads/adidas-futbol-klublarinin-renglerini-ev-heyvanlari-ucun-formaya-cevirdi-1788031014601.jpg",
-    "featured": true,
+    "featured": false,
     "sourceName": "Marklife.az"
   },
   {
@@ -180,7 +180,7 @@
     "publishedAt": "2026-08-29",
     "readingMinutes": 3,
     "image": "/uploads/the-laughing-cow-pendir-formasinda-yuk-masini-ile-diqqet-cekir-1788031055375.jpg",
-    "featured": false,
+    "featured": true,
     "sourceName": "Marklife.az"
   }
 ]
