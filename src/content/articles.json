@@ -18,7 +18,6 @@
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
-    "category": "ai",
     "title": "Süni intellekt modeli enerji şəbəkələrində itkiləri 15% azaltdı",
     "excerpt": "Real vaxt rejimində yükü proqnozlaşdıran alqoritm elektrik şəbəkəsində itkiləri azaldaraq daha sabit enerji təchizatı təmin edir.",
     "body": [
@@ -26,12 +25,13 @@
       "Pilot bölgədə tətbiqdən sonra ötürücü xətlərdəki itkilər nəzərəçarpacaq dərəcədə azalıb, bu da həm xərcləri, həm də karbon izini aşağı salıb.",
       "Enerji şirkəti texnologiyanı növbəti il daha geniş şəbəkəyə tətbiq etməyi planlaşdırır."
     ],
+    "category": "ai",
     "publishedAt": "2026-07-30",
     "readingMinutes": 2,
+    "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png",
     "gradient": "from-sky-500 via-blue-500 to-indigo-600",
     "emoji": "⚡",
-    "featured": false,
-    "image": "/uploads/ai-enerji-sebekesi-itkileri-azaldir-cover.png"
+    "featured": true
   },
   {
     "slug": "kicik-sahibkar-destek-fondu",
@@ -116,7 +116,7 @@
     "image": "/uploads/sosial-media-itkin-heyvan-kampaniyasi-cover.png",
     "gradient": "from-pink-400 via-fuchsia-400 to-purple-500",
     "emoji": "🐾",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "xeyriyyeci-marketinq-kampaniyalari",
