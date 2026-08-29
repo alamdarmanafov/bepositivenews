@@ -47,6 +47,47 @@ export default function ArticleForm(props: Props) {
   const [uploadingImage, setUploadingImage] = useState(false);
   const [error, setError] = useState("");
 
+  const [aiSourceText, setAiSourceText] = useState("");
+  const [aiLoading, setAiLoading] = useState(false);
+  const [aiError, setAiError] = useState("");
+
+  async function handleAiDraft() {
+    if (!aiSourceText.trim()) {
+      setAiError("Mənbə mətnini yapışdırın.");
+      return;
+    }
+    setAiLoading(true);
+    setAiError("");
+
+    const res = await fetch("/api/admin/ai-draft", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sourceText: aiSourceText }),
+    });
+
+    setAiLoading(false);
+
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      setAiError(data.error ?? "AI xəbəri hazırlaya bilmədi.");
+      return;
+    }
+
+    const draft = (await res.json()) as {
+      title: string;
+      excerpt: string;
+      body: string[];
+      category: CategoryKey;
+      readingMinutes: number;
+    };
+
+    handleTitleChange(draft.title);
+    setExcerpt(draft.excerpt);
+    setBody(draft.body.join("\n\n"));
+    setCategory(draft.category);
+    setReadingMinutes(draft.readingMinutes);
+  }
+
   function handleTitleChange(value: string) {
     setTitle(value);
     if (!slugTouched) setSlug(slugify(value));
@@ -171,6 +212,34 @@ export default function ArticleForm(props: Props) {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+      {props.mode === "create" && (
+        <div className="flex flex-col gap-2 rounded-2xl border border-dashed border-primary/40 bg-primary/5 p-4">
+          <label htmlFor="aiSourceText" className={labelClass}>
+            AI ilə yaz — mənbə mətnini yapışdırın
+          </label>
+          <textarea
+            id="aiSourceText"
+            rows={5}
+            value={aiSourceText}
+            onChange={(event) => setAiSourceText(event.target.value)}
+            placeholder="Xəbərin orijinal mətnini (və ya qısa təsvirini) bura yapışdırın…"
+            className={inputClass}
+          />
+          {aiError && <p className="text-sm text-red-600">{aiError}</p>}
+          <button
+            type="button"
+            onClick={handleAiDraft}
+            disabled={aiLoading}
+            className="self-start rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-50"
+          >
+            {aiLoading ? "Yazılır…" : "AI ilə xəbər yaz"}
+          </button>
+          <p className="text-xs text-foreground/50">
+            Aşağıdakı sahələr avtomatik dolacaq — dərc etməzdən əvvəl mütləq oxuyub yoxlayın.
+          </p>
+        </div>
+      )}
+
       <div className="flex flex-col gap-1.5">
         <label htmlFor="title" className={labelClass}>
           Başlıq
