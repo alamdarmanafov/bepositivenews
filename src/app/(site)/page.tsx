@@ -24,15 +24,17 @@ export default function Home() {
     <Container className="flex flex-col gap-10 py-6 sm:py-10">
       <h1 className="sr-only">{SITE_NAME} — Texnologiya, süni intellekt və marketinq xəbərləri</h1>
 
-      <section className="grid gap-4 lg:grid-cols-3 lg:items-stretch">
-        <div className="h-72 sm:h-96 lg:h-auto lg:col-span-2">
+      <section className={`grid gap-4 ${sideCards.length > 0 ? "lg:grid-cols-3 lg:items-stretch" : ""}`}>
+        <div className={`h-72 sm:h-96 lg:h-[26rem] ${sideCards.length > 0 ? "lg:col-span-2" : ""}`}>
           <HeroSlider slides={heroSlides} />
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {sideCards.map((article) => (
-            <ArticleCard key={article.slug} article={article} size="side" />
-          ))}
-        </div>
+        {sideCards.length > 0 && (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            {sideCards.map((article) => (
+              <ArticleCard key={article.slug} article={article} size="side" />
+            ))}
+          </div>
+        )}
       </section>
 
       <section id="kateqoriyalar" className="scroll-mt-20">
