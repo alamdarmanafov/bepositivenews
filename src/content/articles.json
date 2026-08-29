@@ -14,7 +14,7 @@
     "image": "/uploads/ai-model-tibbi-diaqnostika-nailiyyeti-1787897778117.jpg",
     "gradient": "from-blue-600 via-indigo-500 to-slate-700",
     "emoji": "🤖",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "ai-enerji-sebekesi-itkileri-azaldir",
@@ -65,7 +65,7 @@
     "image": "/uploads/batareya-tekrar-emali-yeni-bazar-cover.png",
     "gradient": "from-slate-500 via-sky-500 to-blue-600",
     "emoji": "🔋",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "sosial-media-itkin-heyvan-kampaniyasi",
